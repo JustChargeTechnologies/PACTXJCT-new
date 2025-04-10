@@ -155,8 +155,8 @@ const Navbar = () => {
         </div>
 
         {/* Right Section: Buttons */}
-        <div>
-          <Link to="/supportus" className="md:px-6 md:py-2 py-1 px-1 bg-[#2282B4] text-white rounded-md mr-3">
+        <div className="ml-4">
+          <Link  to="/supportus" className="md:px-6 md:py-2 py-1 px-1 bg-[#2282B4] text-white rounded-md mr-3">
             Donate Now
           </Link>
           <Link
@@ -187,6 +187,7 @@ const Navbar = () => {
               <nav className="pl-[35px] space-y-4">
                 <Link
                   to="/"
+                  onClick={toggleNav}
                   className="block text-[14px]  font-['Nunito_Sans']"
                 >
                   Home
@@ -204,6 +205,7 @@ const Navbar = () => {
                     <div className="ml-4 mb-6 mt-4 space-y-5">
                       <HashLink
                         to="/about#whypact"
+                        onClick={toggleNav}
                         scroll={(el) => {
                           const yOffset = -100; // Adjust this based on your navbar height
                           const y =
@@ -218,6 +220,7 @@ const Navbar = () => {
                       </HashLink>
                       <HashLink
                         to="/about#projects"
+                        onClick={toggleNav}
                         scroll={(el) => {
                           const yOffset = -100; // Adjust this based on your navbar height
                           const y =
@@ -232,6 +235,7 @@ const Navbar = () => {
                       </HashLink>
                       <HashLink
                         to="/about#founder"
+                        onClick={toggleNav}
                         scroll={(el) => {
                           const yOffset = -100; // Adjust this based on your navbar height
                           const y =
@@ -260,23 +264,23 @@ const Navbar = () => {
 
                   {isMakeDiffrrenceArrow && (
                     <div className="ml-4 mb-6 mt-4 space-y-5">
-                      <Link to="/supportus" className="block text-[13px] text-[#6E6E6E]">
+                      <Link to="/supportus" onClick={toggleNav} className="block text-[13px] text-[#6E6E6E]">
                         Support Us
                       </Link>
-                      <Link to="/corporate" className="block text-[13px] text-[#6E6E6E]">
+                      <Link to="/corporate" onClick={toggleNav} className="block text-[13px] text-[#6E6E6E]">
                         Corporate Partner
                       </Link>
-                      <Link to="/volunteer" className="block text-[13px] text-[#6E6E6E]">
+                      <Link to="/volunteer" onClick={toggleNav} className="block text-[13px] text-[#6E6E6E]">
                         Volunteer
                       </Link>
                     </div>
                   )}
                 </div>
 
-                <Link to="/newsroom" className="block text-[14px] font-['Nunito_Sans']">
+                <Link to="/newsroom" onClick={toggleNav} className="block text-[14px] font-['Nunito_Sans']">
                   Newsroom
                 </Link>
-                <Link to="/contact" className="block text-[14px] font-['Nunito_Sans']">
+                <Link to="/contact" onClick={toggleNav} className="block text-[14px] font-['Nunito_Sans']">
                   Contact Us
                 </Link>
               </nav>

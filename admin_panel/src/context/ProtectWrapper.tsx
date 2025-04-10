@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
+
 import axios from "axios";
 import React, { ReactNode, useContext, useEffect } from "react";
 import { AuthContext } from "./AuthContext";
@@ -17,7 +17,7 @@ const ProtectWrapper: React.FC<AuthProviderProps> = ({ children }) => {
     return <div>Loading...</div>;
   }
 
-  const { isAuthenticated, setIsAuthenticated } = auth;
+  const { setIsAuthenticated } = auth;
 
   useEffect(() => {
     const verifyUser = async () => {

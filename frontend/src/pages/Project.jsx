@@ -1,5 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
+
 import React, { useEffect, useState } from "react";
 import Rocket from "../assets/Project/Rocket.webp";
 import Project_bg from "../assets/Project/BG.png";

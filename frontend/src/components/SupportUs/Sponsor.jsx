@@ -118,6 +118,7 @@ const Sponsor = () => {
                             src={item.imgUrl.url || ""}
                             alt="Project"
                             className="h-[280px] w-[280px] object-cover"
+                            loading="lazy"
                           />
                         </div>
                         <div className=" p-4">
@@ -145,13 +146,13 @@ const Sponsor = () => {
             <>
               <button
                 onClick={scrollLeft}
-                className="absolute left-[-8px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[50px] w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                className="absolute left-[16px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[32px] w-[32px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
               >
                 <MdKeyboardArrowLeft className="text-white text-2xl" />
               </button>
               <button
                 onClick={scrollRight}
-                className="absolute right-[-2px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[50px] w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                className="absolute right-[8px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[32px] w-[32px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
               >
                 <MdKeyboardArrowRight className="text-white text-2xl" />
               </button>

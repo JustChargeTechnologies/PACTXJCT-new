@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useContext, useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router";
@@ -7,7 +7,7 @@ import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
 import { AuthContext } from "../context/AuthContext";
 
 const AppHeader: React.FC = () => {
-  const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);
+  const [isApplicationMenuOpen] = useState(false);
 
   const { isMobileOpen, toggleSidebar, toggleMobileSidebar } = useSidebar();
 
@@ -40,7 +40,7 @@ const AppHeader: React.FC = () => {
   if (!auth) {
     return <div>Loading...</div>;
   }
-  const { isAuthenticated, setIsAuthenticated } = auth;
+  const { isAuthenticated } = auth;
 
   const Logout = () => {};
 

@@ -41,6 +41,7 @@ const About = () => {
               <div>
                 <img
                   className="mt-[-15px] mr-[60px] md:mr-[0] w-[90px] md:w-full h-[9px] md:mt-[-11px]"
+                  loading="lazy"
                   src={sign}
                   alt=""
                 />
@@ -49,6 +50,7 @@ const About = () => {
           </div>
           <iframe
             className="w-[85%] md:w-[78%] min-h-[296px] md:min-h-[680px] rounded-2xl md:pt-12"
+            loading="lazy"
             src="https://www.youtube.com/embed/5FEqRnyrLbw"
             title="Your one thought can impact a million lives!"
             frameBorder="0"

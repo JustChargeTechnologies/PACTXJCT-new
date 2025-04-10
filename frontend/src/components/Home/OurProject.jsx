@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import React, { useContext, useEffect } from "react";
 import "../../../public/styles/slider.css";
 import { FaArrowCircleRight } from "react-icons/fa";
@@ -23,14 +23,13 @@ const OurProject = () => {
         if (response.status === 200) {
           const data = await response.data;
           setProject(data);
-          // console.log(data,"project data")
         }
       } catch (error) {
         console.error("Error fetching project all data:", error);
       }
     };
     fetchProject();
-  }, []);
+  }, [setProject]);
 
   return (
     <div
@@ -60,8 +59,8 @@ const OurProject = () => {
                 <div
                   key={indx}
                   className={`bg-white h-auto flex flex-col mb-8 ${
-                    indx % 2 === 0 ? "md:rounded-l-2xl" : "md:rounded-r-2xl"
-                  } rounded-t-2xl md:rounded-t-[0]`}
+                    indx % 2 === 0 ? "md:rounded-2xl" : "md:rounded-2xl"
+                  } rounded-2xl`}
                 >
                   <div
                     className={`flex ${
@@ -75,11 +74,12 @@ const OurProject = () => {
                             ? "md:rounded-l-2xl"
                             : "md:rounded-r-2xl"
                         } rounded-t-2xl md:rounded-t-[0]`}
+                        loading="lazy"
                         src={item.projectUrl.url}
                         alt=""
                       />
                     </div>
-                    <div className="right-section max-w-[520px] p-2 md:p-0 mt-[-120px] md:mt-0 h-auto  md:py-10  mx-auto">
+                    <div className="right-section max-w-[520px] px-4 md:p-0 mt-[-120px] md:mt-0 h-auto  py-8 md:py-10   mx-auto">
                       <div className="">
                         <h2 className="nunito-font font-[700]  text-[24px]">
                           {item.title}

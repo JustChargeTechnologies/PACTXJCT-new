@@ -56,9 +56,7 @@ const Payment = () => {
         }
       );
       if (response.status === 200) {
-        // alert("Form submitted successfully");
         const data = response.data;
-        // console.log(data);
         
         handlePaymentVerify(data.order)
       } else {
@@ -197,6 +195,7 @@ const Payment = () => {
                 <img
                   src={donationImage}
                   alt="Donate Visual"
+                  loading="lazy"
                   className={`object-cover w-full ${
                     cnt === 0
                       ? "h-[300px] md:h-[515px]"
@@ -208,11 +207,11 @@ const Payment = () => {
                   }`}
                 />
                 <div className="absolute inset-0 bg-opacity-30 flex flex-col  items-start p-6 sm:p-10">
-                  <div className="text-white mt-9 flex items-center text-sm tracking-widest font-semibold mb-2">
+                  <div className="text-white mt-9 flex items-center md:text-sm tracking-widest font-semibold mb-2">
                     <div>DONATE</div>
                     <div className="border-1 border-white ml-4 w-[90px]"></div>
                   </div>
-                  <h2 className="text-4xl mt-12 sm:text-5xl font-bold text-white leading-tight font-[Chewy]">
+                  <h2 className="text-[40px] mt-12 sm:text-5xl font-bold text-white leading-tight font-[Chewy]">
                     Make the world a <br /> happier place
                   </h2>
                 </div>
@@ -225,6 +224,7 @@ const Payment = () => {
                   src={pactLogo}
                   alt="PACT Foundation"
                   className="w-40 mb-4"
+                  loading="lazy"
                 />
 
                 {/* Description */}

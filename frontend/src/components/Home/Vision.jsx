@@ -33,7 +33,7 @@ const Vision = () => {
           </div>
         </div>
         <div className=" right-section max-w-[621px] min-h-[350px] md:mt-6 md:min-h-[372px] p-x-5">
-            <img src={Vision2} alt="vision" className="w-[600px] h-[350px] md:h-[440px]" />
+            <img src={Vision2} loading="lazy" alt="vision" className="w-[600px] h-[350px] md:h-[440px]" />
         </div>
         </div>
       </div>

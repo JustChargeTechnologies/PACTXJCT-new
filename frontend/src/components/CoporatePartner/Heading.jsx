@@ -18,7 +18,7 @@ const Heading = () => {
             </div>
             <div className="font-[800] text-[24px] md:text-[56px]">Corporate  <span className=" text-[#8EC641]">Partnerships</span> </div>
             <div className='font-[400] text-[16px] text-[#6E6E6E] leading-[150%] text-center'>At PACT Foundation, without our corporate partners, we cannot ensure the effective execution of ourprograms aimed at eliminating the cycle of poverty. Our partners are critically vital in marshallingresources and adding uniquevalue that aids our mission.PACT Foundation seeks to create beneficial partnerships with ethical, forward-thinking companiesacross the globe. We believe in the power of corporate involvement in driving change, implementingsustainable practices, and enhancing the quality of life of the less privileged communities</div>
-            <img className='mt-[-90px]' src={Co_bg} alt="" />
+            <img className='mt-[-90px]' loading="lazy" src={Co_bg} alt="" />
           </div>
           </div>
         </div>

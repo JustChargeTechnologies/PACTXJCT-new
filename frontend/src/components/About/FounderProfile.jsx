@@ -8,11 +8,11 @@ import "../../../public/styles/slider.css";
 
 const FounderProfile = () => {
   return (
-    <div id="founder"
+    <div   id="founder"
       className="h-auto min-h-[975px]    bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${vision1})` }}
     >
-      <div className="bg-[#e8f6fdb2]  min-h-[1700px]  md:min-h-[999px] flex justify-center items-center  w-full">
+      <div className="bg-[#e8f6fdb2]  min-h-[1700px]  md:min-h-[999px] flex justify-center py-15 md:items-center  w-full">
         <div
           className="min-h-[856px]  rounded-2xl w-[90%] md:w-[79%]"
           style={{ backgroundImage: `url(${About_bg})` }}
@@ -77,7 +77,7 @@ const FounderProfile = () => {
                   norms, shaping the future of education.
                 </div>
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mt-2 md:mt-0">
                 <a
                   href="https://www.linkedin.com/in/ashwinfern/"
                   target="blank"
@@ -85,6 +85,7 @@ const FounderProfile = () => {
                 >
                   <img
                     className="w-[24px] h-[24.5px]"
+                    loading="lazy"
                     src={linkdin}
                     alt="linkdin"
                   />
@@ -96,13 +97,14 @@ const FounderProfile = () => {
                 >
                   <img
                     className="w-[24px] h-[24.5px]"
+                    loading="lazy"
                     src={twitter}
                     alt="twitter"
                   />
                 </a>
               </div>
               <a
-                className="text-white bg-black py-[16px] w-[190px] whitespace-nowrap px-[32px]"
+                className="text-white bg-black py-[16px] w-[190px] mt-3 md:mt-0 whitespace-nowrap px-[32px]"
                 target="blank"
                 href="https://pactfoundation.org/wp-content/uploads/2023/10/f79554_d6ff9e5fbebe45fdb37d1ae24c5f09c0.pdf"
               >
@@ -113,6 +115,7 @@ const FounderProfile = () => {
               <div className=" flex items-center justify-center md:pl-[40px] ">
                 <img
                   className="w-[323px] grayscale-[80%] h-[340px] md:h-[680px] md:min-w-[338px] object-cover object-[center_7%] aspect-[3/4] bg-no-repeat rounded-xl"
+                  loading="lazy"
                   src={founderPic}
                   alt=""
                 />

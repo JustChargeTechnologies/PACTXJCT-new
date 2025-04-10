@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
+
 import React, { useEffect, useState } from "react";
-import news1 from "../../assets/NewsRoom/News1.png";
-import news2 from "../../assets/NewsRoom/News2.png";
 import NewsDetail_bg from "../../assets/NewsRoom/NewsDetail_bg.webp";
 import '../../../public/styles/slider.css'
 import { useParams } from "react-router-dom";
@@ -53,7 +51,7 @@ const NewsDetail = () => {
         </div>
         <div className="w-full flex items-center justify-center">
           <div className="nunito-font h-full flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%]">
-            <div className="leading-[24px] font-[700] tracking-wider flex flex-col gap-[16px]">
+            <div className="leading-[24px] font-[400] tracking-wider flex flex-col gap-[16px]">
               {SingleNews.images[0].paragraph || "No description available."}
             </div>
             {Array.isArray(SingleNews.images) ? (
@@ -68,9 +66,10 @@ const NewsDetail = () => {
                         src={item.imageUrl}
                         alt={`Slide ${index + 1}`}
                         className="h-auto w-full object-cover"
+                        loading="lazy"
                       />
                     </div>
-                    <div className="text-[16px] text-black leading-[24px] font-[700] flex flex-col gap-[16px] tracking-wider">
+                    <div className="text-[16px] text-black leading-[24px] font-[400] flex flex-col gap-[16px] tracking-wider">
                       {item.paragraph.split("\n").map((sentence, i) => (
                         <p key={i}>{sentence.trim() && `${sentence.trim()}.`}</p>
                       ))}

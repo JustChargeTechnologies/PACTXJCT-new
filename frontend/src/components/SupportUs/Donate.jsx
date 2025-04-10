@@ -13,11 +13,11 @@ const Donate = () => {
       >
         <div className="w-[93%] md:w-[79%] nunito-font">
           <div className="flex mt-12 justify-center items-center">
-            <div className="border-1 border-white w-[100px] mr-11"></div>
-            <div>Let’s make a difference</div>
-            <div className="border-1 border-white w-[100px] ml-11"></div>
+            <div className="border-1 border-white w-[50px] md:w-[100px] mr-5 md:mr-11"></div>
+            <div className="text-[11px] md:text-[14px]">Let’s make a difference</div>
+            <div className="border-1 border-white w-[50px] md:w-[100px] ml-5 md:ml-11"></div>
           </div>
-          <div className="text-center text-[52px] mt-6 margarine-font">
+          <div className="text-center text-[25px] md:text-[52px] mt-6 margarine-font">
             Your support makes a difference for children
           </div>
         </div>

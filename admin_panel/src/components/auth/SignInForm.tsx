@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { useContext, useState } from "react";
 import { EyeCloseIcon, EyeIcon } from "../../icons";
 import Label from "../form/Label";
@@ -16,7 +16,7 @@ export default function SignInForm() {
   if (!auth) {
     return <div>Loading...</div>;
   }
-  const { isAuthenticated, setIsAuthenticated } = auth;
+  const { setIsAuthenticated } = auth;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

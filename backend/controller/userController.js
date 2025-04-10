@@ -1,5 +1,5 @@
 
-const userModel = require('../models/userModel.js');
+const userModel = require('../models/UserModel.js');
 const userService=require('../Services/userServices.js')
 const jwt=require('../utils/jwtUtil.js');
 const bcrypt=require('bcrypt');

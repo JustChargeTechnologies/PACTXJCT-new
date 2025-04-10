@@ -112,13 +112,13 @@ const Programs = () => {
             <>
               <button
                 onClick={scrollLeft}
-                className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[50px] w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-green-500 w-[35px] h-[35px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
               >
                 <MdKeyboardArrowLeft className="text-white text-2xl" />
               </button>
               <button
                 onClick={scrollRight}
-                className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[50px] w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-green-500 w-[35px] h-[35px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
               >
                 <MdKeyboardArrowRight className="text-white text-2xl" />
               </button>

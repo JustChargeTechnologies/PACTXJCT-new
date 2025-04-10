@@ -19,7 +19,6 @@ const News = () => {
         if (response.status === 200) {
           const data = await response.data;
           setNews(data);
-          console.log(data);
         }
       } catch (error) {
         console.error("Error fetching news all data:", error);

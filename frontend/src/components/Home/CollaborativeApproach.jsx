@@ -1,6 +1,5 @@
 import "../../../public/styles/slider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import image1 from "../../assets/Home/image1.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -71,6 +70,7 @@ const CollaborativeApproach = () => {
                       alt={`Slide ${index + 1}`}
                       style={{ width: "100%", borderRadius: "10px" }}
                       className="ml-16 md:ml-0"
+                      loading="lazy"
                     />
                   </div>
                 ))}

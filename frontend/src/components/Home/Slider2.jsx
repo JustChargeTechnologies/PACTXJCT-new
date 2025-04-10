@@ -5,6 +5,7 @@ import "../../../public/styles/slider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { FaYoutubeSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Slider2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +38,9 @@ const Slider2 = () => {
           <div>
             {/* Buttons */}
             <div className="flex flex-row my-3 w-[10.94rem] md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
-              <a className="bg-white text-black w-[50%] flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[15px] leading-[100%] tracking-[0%] text-right">
+              <Link to='/about' className="bg-white text-black w-[50%] flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[15px] leading-[100%] tracking-[0%] text-right">
                 What We Do
-              </a>
+              </Link>
               <button
                 onClick={() => setIsOpen(true)}
                 className="flex items-center justify-center gap-2 w-[50%] text-white "
@@ -66,6 +67,7 @@ const Slider2 = () => {
                   {/* Video */}
                   <iframe
                     className="w-full h-[550px]"
+                    loading="lazy"
                     src="https://www.youtube.com/embed/5FEqRnyrLbw?autoplay=1"
                     title="YouTube video"
                     frameBorder="0"

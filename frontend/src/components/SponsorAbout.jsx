@@ -25,6 +25,7 @@ const SponsorAbout = ({ description, images = [] }) => {
         src={img.Url}
         alt={`slide-${i}`}
         className="min-h-[142px] min-w-[190px] object-cover rounded-md shadow-md"
+        loading="lazy"
       />
     </div>
   ));

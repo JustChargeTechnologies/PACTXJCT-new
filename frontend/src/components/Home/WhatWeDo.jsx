@@ -17,6 +17,7 @@ const WhatWeDo = () => {
               src={WhatWeDoImg}
               alt="vision"
               className=" w-[333.8px]  h-[403.47px] md:w-3xl md:h-[613px] md:ml-[30px]   "
+              loading="lazy"
             />
           </div>
           <div className="right-section max-w-[621px] min-h-[801px] p-5 mr-6 pt-6">
