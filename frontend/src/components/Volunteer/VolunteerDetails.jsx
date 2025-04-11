@@ -42,7 +42,7 @@ const VolunteerDetails = () => {
           <HelpForm role="Volunteer"/>
         </div>
       </div>
-      <img className="mt-[-60px]" src={Volunteer_bg2} alt="" />
+      <img className="mt-[-60px]" loading="lazy" src={Volunteer_bg2} alt="" />
     </div>
   );
 };

@@ -44,6 +44,7 @@ const Sponsor = () => {
                 <img
                   src={sponsor.imgUrl.url}
                   className="object-cover bg-center bg-no-repeat w-[337px] h-[204px] md:w-[256px] md:h-[186.36px]"
+                  loading="lazy"
                   alt="sponsor_img"
                 />
               ) : (

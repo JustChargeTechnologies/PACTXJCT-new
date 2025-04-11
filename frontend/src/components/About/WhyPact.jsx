@@ -16,9 +16,9 @@ const WhyPact = () => {
                 <div className='font-[700] leading-[24px] text-[#6E6E6E]'>PACT Foundation is a dynamic knowledge-tank that collaborates with individuals, government bodies, industries, and other non-profit organisations to shape public policy and drive sustainable transformation in local communities. We believe in the power of knowledge sharing and cross-border collaboration to create positive change and influence the world around us</div>
                 <div className='font-[400] leading-[24px] text-[#6E6E6E]'>Our pioneering crowd-sourcing methods and grassroots structures enable us to create an engaging non-profit platform for people to participate in shaping their communities. Through our initiatives, we aim to democratise international knowledge and empower individuals to make informed decisions about their future. At the heart of our work is our live knowledge repository, where we bring together and share experiences, expertise, and extensive knowledge to drive progress. We curate cutting-edge research and insights from across the globe, and make them accessible to all. We believe in the transformative power of knowledge and its ability to shape the world for the better.</div>
                 <div className=' flex gap-4 md:gap-5 flex-wrap md:flex-nowrap'>
-                    <div className='md:max-w-[418.67px] md:min-h-[388px]'><img className='rounded-lg ' src={image1} alt="" /></div>
-                    <div className='md:max-w-[418.67px] md:min-h-[388px]'><img src={image2} alt="" /></div>
-                    <div className='md:max-w-[418.67px] md:min-h-[388px]'><img src={image3} alt="" /></div>
+                    <div className='md:max-w-[418.67px] md:min-h-[388px]'><img className='rounded-lg ' loading="lazy" src={image1} alt="" /></div>
+                    <div className='md:max-w-[418.67px] md:min-h-[388px]'><img src={image2} loading="lazy" alt="" /></div>
+                    <div className='md:max-w-[418.67px] md:min-h-[388px]'><img src={image3} loading="lazy" alt="" /></div>
                 </div>
                 <div className='font-[400] leading-[24px] text-[#6E6E6E] italic'>We facilitate think tanks throughout India, hosting conferences and seminars in collaboration with government and advocacy leaders to advance educational and social causes. Our events provide a platform for experts, policymakers, and citizens to come together and exchange ideas, insights, and best practices.</div>
                 <div className='font-[700] leading-[24px] text-[#6E6E6E]'> At PACT Foundation, we are committed to enhancing education and higher education across the nation. We believe that education is the cornerstone of progress and social mobility, and that every individual should have access to quality education and training opportunities. We work with government bodies, educational institutions, and other stakeholders to identify gaps, develop innovative solutions, and create lasting impact.</div>
@@ -27,7 +27,7 @@ const WhyPact = () => {
                     <Link to="/supportus" className='font-[700] italic text-[#2282B4]'>
                     Donate now
                     </Link>
-                    <div><img src={Arrow} alt="" /></div>
+                    <div><img src={Arrow} loading="lazy" alt="" /></div>
                 </div>
             </div>
         </div>

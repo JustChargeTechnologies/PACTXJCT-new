@@ -39,7 +39,6 @@ const App = () => {
             </ProjectWrapper>
           }
         />
-        {/* <Route path="/about/project/:id" element={<Project />} /> */}
         <Route
           path="/about/project/:id"
           element={

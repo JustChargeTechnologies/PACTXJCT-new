@@ -2,17 +2,12 @@
 import React, { useContext, useEffect } from "react";
 import "../../../public/styles/slider.css";
 import { FaArrowCircleRight } from "react-icons/fa";
-// import project1 from "../../assets/Home/project1.jpeg";
 import vision1 from "../../assets/Vision1.png";
 import { ProjectDataContext } from "../../context/ProjectContext";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
 const OurProject = () => {
-  // const images = new Array(6).fill(project1);
-  // const { project, setProject } = useContext(ProjectDataContext);
-  // console.log(project, "project data");
-  // console.log(project[0].title, "project title");
   const { project, setProject } = useContext(ProjectDataContext);
   useEffect(() => {
     const fetchProject = async () => {

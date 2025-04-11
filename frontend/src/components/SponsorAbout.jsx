@@ -180,6 +180,7 @@ const SponsorAbout = ({ description, images = [] }) => {
                               <div className="h-[280px] w-[280px] overflow-hidden">
                                 <img
                                   src={item.imgUrl?.url || "default-image-path.jpg"}
+                                  loading="lazy"
                                   alt="Project"
                                   className="h-[280px] w-[280px] object-cover"
                                 />

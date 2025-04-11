@@ -1,10 +1,13 @@
-import React from "react";
-import NewsDetail from "../components/SingleNews/NewsDetail";
+import React, { Suspense } from "react";
+const NewsDetail =React.lazy(()=>import("../components/SingleNews/NewsDetail"));
 
 const SingleNews = () => {
   return (
     <div>
-        <NewsDetail/>
+      <Suspense fallback={<p>Loading...</p>}>
+      <NewsDetail/>
+      </Suspense>
+        
     </div>
   );
 };

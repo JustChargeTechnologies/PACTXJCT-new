@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../../public/styles/slider.css";
 
 import vision1 from "../assets/Vision1.png";
 import About_bg from "../assets/About/About_bg.png";
 import sign from "../assets/About/Sign.png";
 import WhyPact from "../components/About/WhyPact";
-import Programs from "../components/About/Programs";
+const Programs = React.lazy(() => import("../components/About/Programs"));
 import FounderProfile from "../components/About/FounderProfile";
 
 const About = () => {
@@ -58,7 +58,9 @@ const About = () => {
             allowFullScreen
           ></iframe>
           <WhyPact />
-          <Programs />
+          <Suspense fallback={<p>Loading...</p>}>
+            <Programs />
+          </Suspense>
         </div>
         <FounderProfile />
       </div>

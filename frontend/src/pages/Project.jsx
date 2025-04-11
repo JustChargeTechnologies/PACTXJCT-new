@@ -1,11 +1,9 @@
 
 import React, { useEffect, useState } from "react";
-import Rocket from "../assets/Project/Rocket.webp";
 import Project_bg from "../assets/Project/BG.png";
 import "../../public/styles/slider.css";
 import vision1 from "../assets/Vision1.png";
 import Programs from "../components/About/Programs";
-// import { ProjectDataContext } from "../context/ProjectContext";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
@@ -21,7 +19,6 @@ const Project = () => {
         if (response.status === 200) {
           const data = await response.data;
           setSingleProject(data);
-          // console.log(data, "one project data");
         }
       } catch (error) {
         console.error("Error fetching project data:", error);
@@ -43,6 +40,7 @@ const Project = () => {
         </div>
         <img
           className="max-w-[335px] md:max-w-[800px] min-h-[296px]  md:min-h-[530px]  object-contain  bg-no-repeat pt-[24px] md:pt-12 "
+          loading="lazy"
           src={singleProject ? singleProject.projectUrl.url : "Loading..."}
           alt=""
         />

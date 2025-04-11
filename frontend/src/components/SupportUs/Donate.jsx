@@ -1,8 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../../../public/styles/slider.css";
 import above_bg from "../../assets/SupportUs/Donate_above.webp";
-import Payment from "./Payment";
-
+const Payment = React.lazy(() => import("./Payment"));
 
 const Donate = () => {
   return (
@@ -14,7 +13,9 @@ const Donate = () => {
         <div className="w-[93%] md:w-[79%] nunito-font">
           <div className="flex mt-12 justify-center items-center">
             <div className="border-1 border-white w-[50px] md:w-[100px] mr-5 md:mr-11"></div>
-            <div className="text-[11px] md:text-[14px]">Let’s make a difference</div>
+            <div className="text-[11px] md:text-[14px]">
+              Let’s make a difference
+            </div>
             <div className="border-1 border-white w-[50px] md:w-[100px] ml-5 md:ml-11"></div>
           </div>
           <div className="text-center text-[25px] md:text-[52px] mt-6 margarine-font">
@@ -22,7 +23,9 @@ const Donate = () => {
           </div>
         </div>
       </div>
-      <Payment/>
+      <Suspense fallback={<p>Loading...</p>}>
+        <Payment />
+      </Suspense>
     </div>
   );
 };

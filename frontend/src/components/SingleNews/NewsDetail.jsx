@@ -46,7 +46,7 @@ const NewsDetail = () => {
             <div className="text-center text-[24px] md:text-[50px] py-3 pb-8 font-[800]  text-[#E3F5FF]">
               {SingleNews.title || "News Title"}
             </div>
-            <img src={SingleNews.images[0].imageUrl} alt="" />
+            <img src={SingleNews.images[0].imageUrl} loading="lazy" alt="" />
           </div>
         </div>
         <div className="w-full flex items-center justify-center">

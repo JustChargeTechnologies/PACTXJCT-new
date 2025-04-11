@@ -13,14 +13,13 @@ const ProjectWrapper = ({children}) => {
         if (response.status === 200) {
             const data = await response.data;
             setProject(data);
-            // console.log(data,"project data")
         }
       } catch (error) {
         console.error("Error fetching project data:", error);
       }
     };
     fetchProject();
-  },[]);
+  },[setProject]);
   return (
     <div>{children}</div>
   );

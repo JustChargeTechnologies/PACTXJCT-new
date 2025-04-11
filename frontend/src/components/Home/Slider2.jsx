@@ -95,6 +95,7 @@ const Slider2 = () => {
                 src={caroselUP}
                 className="w-full h-full object-cover object-center rounded-lg"
                 alt="Slide 1"
+                loading="lazy"
               />
             </div>
             <div className="w-full h-[300px] md:h-[500px]">
@@ -102,6 +103,7 @@ const Slider2 = () => {
                 src={caroselUP}
                 className="w-full h-full object-cover object-center rounded-lg"
                 alt="Slide 2"
+                loading="lazy"
               />
             </div>
             <div className="w-full h-[300px] md:h-[500px]">
@@ -109,6 +111,7 @@ const Slider2 = () => {
                 src={caroselUP}
                 className="w-full h-full object-cover object-center rounded-lg"
                 alt="Slide 3"
+                loading="lazy"
               />
             </div>
           </Carousel>

@@ -570,6 +570,7 @@ const Payment = () => {
                           <div className="ml-auto flex items-center">
                             <img
                               src={yourLogo}
+                              loading="lazy"
                               alt="Custom Logo"
                               className="h-12 mr-2"
                             />

@@ -90,6 +90,7 @@ const Programs = () => {
                           src={item.projectUrl?.url || ""}
                           alt="Project"
                           className="h-full w-full object-cover rounded-lg"
+                          loading="lazy"
                         />
                       </div>
                       <div className="flex flex-row items-center gap-2">

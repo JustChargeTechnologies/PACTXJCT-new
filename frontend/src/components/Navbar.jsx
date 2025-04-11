@@ -35,6 +35,7 @@ const Navbar = () => {
           <Link to="/">
           <img
             src={logo}
+            loading="lazy"
             alt="Logo"
             className="block static  md:w-[148.61px] md:h-[72px] w-[82.56px] h-[40px]"
           />

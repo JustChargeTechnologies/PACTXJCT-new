@@ -21,16 +21,16 @@ const Footer = () => {
             </p>
             <div className=" flex gap-4 mt-4">
               <a href="https://www.facebook.com/pactforyou" target="blank" className="h-[31.28px] w-[30.34px]">
-                <img src={Facebook} alt="" />
+                <img src={Facebook} loading="lazy" alt="" />
               </a>
               <a href="https://www.instagram.com/pactforyou/" target="blank" className="h-[31.28px] w-[30.34px]">
-                <img src={Insta} alt="" />
+                <img src={Insta} loading="lazy" alt="" />
               </a>
               <a href="https://twitter.com/pactforyou" target="blank" className="h-[31.28px] w-[30.34px]">
-                <img src={Twitter} alt="" />
+                <img src={Twitter} loading="lazy" alt="" />
               </a>
               <a href="https://www.youtube.com/@pactforyou" target="blank" className="h-[31.28px] w-[30.34px]">
-                <img src={Youtube} alt="" />
+                <img src={Youtube} loading="lazy" alt="" />
               </a>
             </div>
           </div>

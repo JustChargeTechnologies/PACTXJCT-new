@@ -11,20 +11,25 @@ const News = () => {
     return moment(dateString).format("MMMM D, YYYY");
   };
   useEffect(() => {
+    let isMounted = true; 
     const fetchNews = async () => {
       try {
         const response = await axios.get(
           `${import.meta.env.VITE_BASE_URL}/getnews`
         );
-        if (response.status === 200) {
-          const data = await response.data;
-          setNews(data);
+        if (response.status === 200 && isMounted) {
+          setNews(response.data);
         }
       } catch (error) {
-        console.error("Error fetching news all data:", error);
+        if (isMounted) {
+          console.error("Error fetching news all data:", error);
+        }
       }
     };
-    fetchNews();
+    fetchNews(); 
+    return () => {
+      isMounted = false;
+    };
   }, []);
   return (
     <div
@@ -43,6 +48,7 @@ const News = () => {
                 <div>
                   <img
                     className="min-w-[284px] md:min-w-[244px] h-[160px] rounded-xl"
+                    loading="lazy"
                     src={item.images[0]?.imageUrl || ""}
                     alt={item.title || "News Image"}
                   />

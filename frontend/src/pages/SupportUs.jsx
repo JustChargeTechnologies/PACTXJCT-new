@@ -1,15 +1,20 @@
-import React from 'react'
-import Sponsor from '../components/SupportUs/Sponsor'
-import Volnteer from '../components/SupportUs/Volnteer'
-import Donate from '../components/SupportUs/Donate'
+import React, { Suspense } from "react";
+const Sponsor = React.lazy(() => import("../components/SupportUs/Sponsor"));
+import Volnteer from "../components/SupportUs/Volnteer";
+const Donate = React.lazy(() => import("../components/SupportUs/Donate"));
 
 const SupportUs = () => {
   return (
     <div>
-        <Donate/>
-        <Sponsor/>
-    <Volnteer/></div>
-  )
-}
+      <Suspense fallback={<p>Loading....</p>}>
+        <Donate />
+      </Suspense>
+      <Suspense fallback={<p>Loading....</p>}>
+        <Sponsor />
+      </Suspense>
+      <Volnteer />
+    </div>
+  );
+};
 
-export default SupportUs
+export default SupportUs;

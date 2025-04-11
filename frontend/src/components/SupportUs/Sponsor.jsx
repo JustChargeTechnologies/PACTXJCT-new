@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { useRef, useState } from "react";
 import "../../../public/styles/slider.css";
-import slider1 from "../../assets/About/slider1.jpg";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa";
@@ -11,7 +10,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Sponsor = () => {
-  // const project = [slider1, slider1,slider1, slider1,slider1, slider1];
   const sliderRef = useRef(null);
   const [visibleSlides, setVisibleSlides] = useState(1);
   const [cardWidth, setCardWidth] = useState(0);
