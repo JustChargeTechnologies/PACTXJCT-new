@@ -14,13 +14,13 @@ const Slider2 = () => {
       className="relative md:mt-[90px] mt-[72px] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bgSlider})` }}
     >
-      <div className="h-auto md:max-h-[632px] w-full bg-[#F7941DCC]  py-8 flex flex-col md:flex-row justify-center md:justify-around  items-center text-white z-30">
-        <div className="left-section flex-1 flex flex-col justify-center px-4 md:px-30">
-          <h2 className="font-nunito font-bold text-[32.61px] leading-[120%] tracking-[0] md:text-[56px]">
+      <div className="h-auto md:max-h-[632px] w-full bg-[#F7941DCC]  py-8 pl-4 md:pr-26 md:pl-28 flex flex-col md:gap-6 md:flex-row justify-center md:justify-around  items-center text-white z-30">
+        <div className="left-section flex-1 flex flex-col justify-center ">
+          <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] md:text-[56px]">
             <p>Inspiring change</p>
             <span
-              className="margarine-font bg-white text-[#2282B4] px-4 py-2 rounded-full inline-block text-center mt-2"
-              style={{ transform: "rotate(-1.13deg)" }}
+              className="margarine-font bg-white text-[#2282B4] px-4 py-2 rounded-full inline-block text-center mt-4"
+              
             >
               enriching lives
             </span>
@@ -46,7 +46,7 @@ const Slider2 = () => {
                 className="flex items-center justify-center gap-2 w-[50%] text-white "
               >
                 <span className="flex items-center justify-center rounded-md ">
-                  <FaYoutubeSquare className="bg-amber-500 text-white w-6 h-6" />
+                  <FaYoutubeSquare className="bg-amber-600 text-white w-6 h-6" />
                 </span>
                 Play Video
               </button>
@@ -90,26 +90,26 @@ const Slider2 = () => {
             stopOnHover={true}
             className="md:w-[100%] w-[90%] mx-auto pb-5"
           >
-            <div className="w-full h-[300px] md:h-[500px]">
+            <div className="w-[600px] h-[300px] md:h-[500px]">
               <img
                 src={caroselUP}
-                className="w-full h-full object-cover object-center rounded-lg"
+                className="w-[450px]  h-full object-cover object-center rounded-lg"
                 alt="Slide 1"
                 loading="lazy"
               />
             </div>
-            <div className="w-full h-[300px] md:h-[500px]">
+            <div className="w-[600px] h-[300px] md:h-[500px]">
               <img
                 src={caroselUP}
-                className="w-full h-full object-cover object-center rounded-lg"
+                className="w-[450px] h-full object-cover object-center rounded-lg"
                 alt="Slide 2"
                 loading="lazy"
               />
             </div>
-            <div className="w-full h-[300px] md:h-[500px]">
+            <div className="w-[600px] h-[300px] md:h-[500px]">
               <img
                 src={caroselUP}
-                className="w-full h-full object-cover object-center rounded-lg"
+                className="w-[450px] h-full object-cover object-center rounded-lg"
                 alt="Slide 3"
                 loading="lazy"
               />

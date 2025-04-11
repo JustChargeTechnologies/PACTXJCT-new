@@ -20,7 +20,7 @@ const Donate = () => {
               have a voice, and where youth thrive. Join us in our pursuit of a
               brighter, more inclusive, and more equitable future for all.
             </p>
-            <h1 className="margarine-font text-[38px] md:text-[56px] text-white text-center mt-3">Be a part of the change. Together, let's Empower Tomorrow!</h1>
+            <h1 className="margarine-font text-[38px] md:text-[56px] text-white leading-[120%] text-center mt-3">Be a part of the change. Together, let's Empower Tomorrow!</h1>
             <Link to="/supportus" className=" nunito-font text-white bg-black px-5 py-3 mt-4 mb-4">Donate now</Link>
           </div>
           

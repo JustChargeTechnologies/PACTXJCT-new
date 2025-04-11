@@ -10,34 +10,33 @@ import { FaHandFist } from "react-icons/fa6";
 const WhatWeDo = () => {
   return (
     <div className=" h-auto w-full ">
-      <div className="  h-auto  bg-gradient-to-b from-[#195878] to-[#2282B4] pt-8 md:pt-0">
+      <div className="  h-auto  bg-[#2282B4] pt-8 md:pt-0">
+        <div className="px-[30px] pt-[25px] md:pt-[40px] md:px-[60px] md:pl-[90px]">
+          <h3 className="text-[#E3F5FF] flex items-center font-normal text-[12px]  md:text-[14px] pb-3">
+            <div>WHAT WE DO</div>
+            <div className="min-w-[76px] border-1 h-0  ml-4"></div>
+          </h3>
+          <p className=" nunito-font font-extrabold text-[32.21px] md:text-[40px] text-[#FFFF] leading-[40px] md:leading-[50px] ">
+            Changing the future of Goa's socio economic landscape
+          </p>
+          <p className="font-normal text-[13px] md:text-[16px] leading-[26px] tracking-[0px] nunito-font text-[#E3F5FF] mt-6 ">
+            As a think tank and changemaker, we actively collaborate with
+            stakeholders from all walks of life, aiming to forge a path toward
+            meaningful societal transformation. Our team of experts, policy
+            analysts, and change catalysts work hand-in-hand to:
+          </p>
+        </div>
         <div className="max-w-[1480px] flex flex-col-reverse md:flex-row flex-wrap justify-center md:justify-between  items-center mx-auto">
-          <div className=" left-section max-w-[621px] mb-6 md:mb-0">
+          <div className=" left-section max-w-[610px] mb-6 md:mb-0 py-6">
             <img
               src={WhatWeDoImg}
               alt="vision"
-              className=" w-[333.8px]  h-[403.47px] md:w-3xl md:h-[613px] md:ml-[30px]   "
+              className=" w-[333.8px]  h-[403.47px] md:w-3xl md:h-[613px] md:ml-[90px]   "
               loading="lazy"
             />
           </div>
-          <div className="right-section max-w-[621px] min-h-[801px] p-5 mr-6 pt-6">
+          <div className="right-section max-w-[621px] p-5 mr-6 pt-6">
             <div className="flex flex-col">
-              <h3 className="text-[#E3F5FF] flex items-center font-normal text-[12px]  md:text-[14px] pb-3">
-                <div>WHAT WE DO</div>
-                <div className="min-w-[76px] border-1 h-0  ml-4"></div>
-              </h3>
-              <p className=" nunito-font font-extrabold text-[32.21px] md:text-[40px] text-[#FFFF] leading-[40px] md:leading-[50px] ">
-                Changing the future of Goa's
-              </p>
-              <p className="nunito-font font-extrabold text-[#FFFF]  text-[32.21px] md:text-[40px] leading-[40px] md:leading-[50px]">
-                socio economic landscape
-              </p>
-              <p className="font-normal text-[13px] md:text-[16px] leading-[26px] tracking-[0px] nunito-font text-[#E3F5FF] mt-6 ">
-                As a think tank and changemaker, we actively collaborate with
-                stakeholders from all walks of life, aiming to forge a path
-                toward meaningful societal transformation. Our team of experts,
-                policy analysts, and change catalysts work hand-in-hand to:
-              </p>
               <div className=" text-white flex mt-[32px] md:mt-[20px] ">
                 <div className="min-w-[22.54px] h-[22.54px]  md:min-w-[38px] md:h-[38px] flex justify-center items-center rounded-md bg-white ">
                   <FaGraduationCap className="inline h-[28px] w-[28px] bg-white text-black " />

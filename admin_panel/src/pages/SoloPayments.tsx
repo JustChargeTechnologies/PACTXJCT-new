@@ -11,6 +11,22 @@ const SoloPayments = () => {
             <div>NAME : </div>
             <div>Virjesh Choudhary</div>
         </div>
+        <div className='flex'>
+            <div>NAME : </div>
+            <div>Virjesh Choudhary</div>
+        </div>
+        <div className='flex'>
+            <div>NAME : </div>
+            <div>Virjesh Choudhary</div>
+        </div>
+        <div className='flex'>
+            <div>NAME : </div>
+            <div>Virjesh Choudhary</div>
+        </div>
+        <div className='flex'>
+            <div>NAME : </div>
+            <div>Virjesh Choudhary</div>
+        </div>
     </div>
   )
 }

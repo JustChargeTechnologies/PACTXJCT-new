@@ -34,7 +34,7 @@ const OurProject = () => {
       <div className=" bg-[#EDF8FFB2]  h-auto  w-full">
         <div className="heading-section flex justify-center">
           <div className=" text-center py-5 mb-5  ">
-            <div className="text-[14px] flex items-center justify-center text-[#6E6E6E] nunito-font font-semibold">
+            <div className="text-[14px] flex items-center md:mt-8  justify-center text-[#6E6E6E] nunito-font font-semibold">
               <div className="min-w-[76px] border-1 h-0  mr-4"></div>
               <div>OUR PROJECTS</div>
               <div className="min-w-[76px] border-1 h-0  ml-4"></div>
@@ -62,7 +62,7 @@ const OurProject = () => {
                       indx % 2 === 0 ? "flex-row" : "flex-row-reverse"
                     } justify-center md:justify-between flex-wrap`}
                   >
-                    <div className="left-section max-w-[537px] min-h-[334px]">
+                    <div className="left-section max-w-[537px] md:max-w-[560px] min-h-[334px] md:max-h-[379px]">
                       <img
                         className={`${
                           indx % 2 === 0
@@ -74,7 +74,7 @@ const OurProject = () => {
                         alt=""
                       />
                     </div>
-                    <div className="right-section max-w-[520px] px-4 md:p-0 mt-[-120px] md:mt-0 h-auto  py-8 md:py-10   mx-auto">
+                    <div className="right-section max-w-[520px] px-4 md:px-10 mt-[-120px] md:mt-0 h-auto  py-8 md:py-10   mx-auto">
                       <div className="">
                         <h2 className="nunito-font font-[700]  text-[24px]">
                           {item.title}
@@ -84,9 +84,9 @@ const OurProject = () => {
                         </div>
                         <Link
                           to={`/about/project/${item._id}`}
-                          className="flex justify-center items-center  text-white bg-[#8EC641] mt-6 rounded-full h-[46.09px] w-[144.09px]"
+                          className="flex justify-center items-center  text-white bg-[#8EC641] mt-6 rounded-xl h-[46.09px] w-[144.09px]"
                         >
-                          <span className="text-[12px] font-[400]">
+                          <span className="text-[12px] md:text-[18px] font-[400]">
                             Know More
                           </span>
                           <div className="pr-2 ml-3">

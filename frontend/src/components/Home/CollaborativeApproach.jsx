@@ -8,12 +8,12 @@ import vision1 from "../../assets/Vision1.png";
 
 const CollaborativeApproach = () => {
   const images = [
-    { src: image1, width: 257.13 },
-    { src: image1, width: 257.13 },
-    { src: image1, width: 257.13 },
-    { src: image1, width: 257.13 },
-    { src: image1, width: 257.13 },
-    { src: image1, width: 257.13 },
+    { src: image1, width: 216.3 },
+    { src: image1, width: 216.3 },
+    { src: image1, width: 216.3 },
+    { src: image1, width: 216.3 },
+    { src: image1, width: 216.3 },
+    { src: image1, width: 216.3 },
   ];
 
   const settings = {
@@ -57,7 +57,8 @@ const CollaborativeApproach = () => {
             </div>
           </div>
           <div className="lower mt-9">
-            <div className="slider-container overflow-hidden p-0 m-0 min-h-[220px] md:min-h-[240px]">
+          <div className="slider-container relative overflow-hidden p-0 m-0 pb-[50px] min-h-[280px]">
+
               <Slider {...settings}>
                 {images.map((img, index) => (
                   <div
@@ -69,7 +70,7 @@ const CollaborativeApproach = () => {
                       src={img.src}
                       alt={`Slide ${index + 1}`}
                       style={{ width: "100%", borderRadius: "10px" }}
-                      className="ml-16 md:ml-0"
+                      className="ml-16 md:ml-0 min-h-[239px] object-cover"
                       loading="lazy"
                     />
                   </div>
