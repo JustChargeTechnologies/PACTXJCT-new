@@ -60,10 +60,9 @@ const Payments = () => {
                 <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
                   {item.donor.phone}
                 </td>
-                <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">paid</td>
+                <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">{item.amount}</td>
                 <td className="px-6 py-4">
-                  {/* {item.message} */}
-                  done
+                  {item.status}
                 </td>
                 <td>
                   <Link

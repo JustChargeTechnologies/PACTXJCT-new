@@ -1,9 +1,8 @@
-
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Project_bg from "../assets/Project/BG.png";
 import "../../public/styles/slider.css";
 import vision1 from "../assets/Vision1.png";
-import Programs from "../components/About/Programs";
+const Programs = React.lazy(() => import("../components/About/Programs"));
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
@@ -48,15 +47,20 @@ const Project = () => {
       <div className="bg-[#231F20] w-full flex items-center justify-center ">
         <div className=" text-white nunito-font h-full  flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%] ">
           <div>{singleProject ? singleProject.aboutProject : "Loading..."}</div>
-          {singleProject?singleProject.description.split("\n").map((sentence, i) => (
-            <p key={i}>{sentence.trim() && `${sentence.trim()}.`}</p>
-          )) : "Loading..."}
-          
+          {singleProject
+            ? singleProject.description
+                .split("\n")
+                .map((sentence, i) => (
+                  <p key={i}>{sentence.trim() && `${sentence.trim()}.`}</p>
+                ))
+            : "Loading..."}
         </div>
       </div>
       <div style={{ backgroundImage: `url(${vision1})` }}>
         <div className="h-auto  pb-[20px] md:pb-[60px]  w-full bg-white/50  flex flex-col md:flex-row justify-center md:justify-around  items-center text-white z-30">
-          <Programs />
+          <Suspense fallback={<p>Loading...</p>}>
+            <Programs />
+          </Suspense>
         </div>
       </div>
     </div>

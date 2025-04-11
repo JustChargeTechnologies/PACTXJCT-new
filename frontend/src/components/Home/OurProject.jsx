@@ -24,7 +24,7 @@ const OurProject = () => {
       }
     };
     fetchProject();
-  }, [setProject]);
+  }, [setProject,project]);
 
   return (
     <div

@@ -5,6 +5,7 @@ import NotFound from "./pages/OtherPage/NotFound";
 import Projects from "./pages/Projects";
 import Volunteer from "./pages/Volunteer";
 import News from "./pages/News";
+import SoloPayments from "./pages/SoloPayments";
 import Sponser from "./pages/Sponser";
 import Payments from "./pages/Payments";
 import AppLayout from "./layout/AppLayout";
@@ -60,7 +61,7 @@ export default function App() {
               path="/supportus/:id"
               element={
                 <ProtectWrapper>
-                  <Payments />
+                  <SoloPayments/>
                 </ProtectWrapper>
               }
             />
@@ -73,7 +74,7 @@ export default function App() {
               }
             />
 
-            {/* Forms */}
+
             <Route
               path="/sponser"
               element={
@@ -83,7 +84,6 @@ export default function App() {
               }
             />
 
-            {/* Tables */}
             <Route
               path="/news"
               element={
@@ -94,11 +94,9 @@ export default function App() {
             />
           </Route>
 
-          {/* Auth Layout */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
 
-          {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
