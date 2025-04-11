@@ -67,27 +67,31 @@ const ContactDetails = () => {
                 placeholder="Name*"
                 type="text"
                 value={name} // Bind to state
-                onChange={(e) => setName(e.target.value)} // Update state on change
+                onChange={(e) => setName(e.target.value)}
+                required
               />
               <input
                 className="py-[10px] px-[16px] bg-white"
                 placeholder="Email*"
                 type="email"
                 value={email} // Bind to state
-                onChange={(e) => setEmail(e.target.value)} // Update state on change
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
               <input
                 className="py-[10px] px-[16px] bg-white"
                 placeholder="Phone Number*"
                 type="text"
                 value={phoneno} // Bind to state
-                onChange={(e) => setPhoneno(e.target.value)} // Update state on change
+                onChange={(e) => setPhoneno(e.target.value)}
+                required
               />
               <textarea
                 className="py-[10px] px-[16px] bg-white h-[130px]"
                 placeholder="Your Message"
                 value={message} // Bind to state
-                onChange={(e) => setMessage(e.target.value)} // Update state on change
+                onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
               <div>
                 <button

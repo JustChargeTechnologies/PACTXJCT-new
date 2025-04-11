@@ -10,7 +10,7 @@ const Vision = () => {
           style={{ backgroundImage: `url(${vision1})` }}
         >
     <div className=" h-auto w-full ">
-      <div className="bg-[#FFF5E999]  h-auto ">
+      <div className="bg-[#FFF5E999]  h-auto px-10">
         <div className="max-w-[1480px] flex flex-wrap justify-center md:justify-between  items-center mx-auto">
         <div className="left-section max-w-[621px] min-h-[372px] p-5 ">
           <div className="flex flex-col ">

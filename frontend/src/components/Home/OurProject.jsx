@@ -48,7 +48,7 @@ const OurProject = () => {
         </div>
        
         <div className=" flex flex-col justify-center items-center w-full ">
-          <div className="w-[80%] md:w-[70%] ">
+          <div className="w-[80%] xl:w-[80%] 2xl:w-[70%]">
             {project && project.length > 0 ? (
               project.map((item, indx) => (
                 <div

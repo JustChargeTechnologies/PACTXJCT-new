@@ -73,10 +73,10 @@ exports.verifyPayment = async (req, res) => {
 
 exports.getAllDonations = async (req, res) => {
     try {
-      const donations = await require('../models/donation').find({});
-      res.json({ success: true, donations });
+      const donations = await Donation.find({});
+      res.status(200).json({ success: true, donations });
     } catch (error) {
       console.error('Error fetching donation details:', error);
-      res.status(500).json({ success: false, message: 'Failed to fetch donation details' });
+      res.status(500).json({ success: false, message: 'Failed to fetch donation details'});
     }
   };

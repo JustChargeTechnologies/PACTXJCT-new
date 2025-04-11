@@ -348,6 +348,7 @@ const Payment = () => {
                               } rounded px-3 py-2`}
                               value={firstName}
                               onChange={(e) => setFirstName(e.target.value)}
+                              required
                             />
                           </div>
                           <div>
@@ -363,6 +364,7 @@ const Payment = () => {
                               } rounded px-3 py-2`}
                               value={lastName}
                               onChange={(e) => setLastName(e.target.value)}
+                              required
                             />
                           </div>
                         </div>
@@ -381,6 +383,7 @@ const Payment = () => {
                             } rounded px-3 py-2`}
                             value={country}
                             onChange={(e) => setCountry(e.target.value)}
+                            required
                           />
                         </div>
 
@@ -399,6 +402,7 @@ const Payment = () => {
                             placeholder="House number and street name"
                             value={street}
                             onChange={(e) => setStreet(e.target.value)}
+                            required
                           />
                           <input
                             type="text"
@@ -406,6 +410,7 @@ const Payment = () => {
                             placeholder="Apartment, suite, unit, etc. (optional)"
                             value={apartment}
                             onChange={(e) => setApartment(e.target.value)}
+                            required
                           />
                         </div>
 
@@ -422,6 +427,7 @@ const Payment = () => {
                             } rounded px-3 py-2`}
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
+                            required
                           />
                         </div>
 
@@ -433,6 +439,7 @@ const Payment = () => {
                             className="w-full border border-gray-300 rounded px-3 py-2"
                             value={state}
                             onChange={(e) => setState(e.target.value)}
+                            required
                           >
                             {options.map((option) => (
                               <option
@@ -460,6 +467,7 @@ const Payment = () => {
                             } rounded px-3 py-2`}
                             value={pincode}
                             onChange={(e) => setPincode(e.target.value)}
+                            required
                           />
                         </div>
 
@@ -476,6 +484,7 @@ const Payment = () => {
                             } rounded px-3 py-2`}
                             value={phoneno}
                             onChange={(e) => setPhoneno(e.target.value)}
+                            required
                           />
                         </div>
 
@@ -493,6 +502,7 @@ const Payment = () => {
                             } rounded px-3 py-2`}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
+                            required
                           />
                         </div>
 
@@ -604,7 +614,7 @@ const Payment = () => {
                           </div>
                           <button
                             onClick={() => setCnt(cnt - 1)}
-                            className="bg-lime-500 relative md:left-81 md:bottom-5 text-white px-6 py-2 rounded font-bold"
+                            className="bg-lime-500 relative md:left-75 md:bottom-5 text-white px-6 py-2 rounded font-bold "
                           >
                             Fix Invalid Fields
                           </button>

@@ -78,6 +78,7 @@ const HelpForm = ({ role }) => {
                   className="w-full mt-1 pt-2 border-b border-gray-300 outline-none focus:border-gray-500 focus:ring-0"
                   value={firstname}
                   onChange={(e) => setFirstname(e.target.value)}
+                  required
                 />
               </div>
 
@@ -89,6 +90,7 @@ const HelpForm = ({ role }) => {
                   className="w-full mt-1 pt-2 border-b border-gray-300 outline-none focus:border-gray-500 focus:ring-0"
                   value={lastname}
                   onChange={(e) => setLastname(e.target.value)}
+                  required
                 />
               </div>
             </div>
@@ -100,6 +102,7 @@ const HelpForm = ({ role }) => {
                 className="w-full mt-1 pt-2 border-b border-gray-300 outline-none focus:border-gray-500 focus:ring-0"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
             <div className="mt-4">
@@ -110,6 +113,7 @@ const HelpForm = ({ role }) => {
                 className="w-full mt-1 pt-2 border-b border-gray-300 outline-none focus:border-gray-500 focus:ring-0"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
+                required
               />
             </div>
             <div className="mt-4">
@@ -120,6 +124,7 @@ const HelpForm = ({ role }) => {
                 className="w-full mt-1 pt-2 border-b border-gray-300 outline-none focus:border-gray-500 focus:ring-0"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
             </div>
 

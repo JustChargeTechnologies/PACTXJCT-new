@@ -57,6 +57,14 @@ export default function App() {
               }
             />
             <Route
+              path="/supportus/:id"
+              element={
+                <ProtectWrapper>
+                  <Payments />
+                </ProtectWrapper>
+              }
+            />
+            <Route
               path="/contacts"
               element={
                 <ProtectWrapper>
