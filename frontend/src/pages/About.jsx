@@ -3,7 +3,7 @@ import "../../public/styles/slider.css";
 
 import vision1 from "../assets/Vision1.png";
 import About_bg from "../assets/About/About_bg.png";
-import sign from "../assets/About/Sign.png";
+// import sign from "../assets/About/Sign.png";
 import WhyPact from "../components/About/WhyPact";
 const Programs = React.lazy(() => import("../components/About/Programs"));
 import FounderProfile from "../components/About/FounderProfile";
@@ -11,7 +11,7 @@ import FounderProfile from "../components/About/FounderProfile";
 const About = () => {
   return (
     <div>
-      <div className="relative md:mt-[99px] mt-[74px] bg-cover bg-center bg-no-repeat w-full">
+      <div className="relative  bg-cover bg-center bg-no-repeat w-full">
         <div
           style={{ backgroundImage: `url(${About_bg})` }}
           className="bg-green-pattern relative w-full min-h-[390px] md:min-h-[555px]"
@@ -33,19 +33,19 @@ const About = () => {
             <div className="flex flex-col justify-end items-end">
               <div className="font-[800] text-center text-[24px] md:text-[56px] py-3 md:leading-[50px] ">
                 Finding{" "}
-                <span className="margarine-regular text-white font-[400] text-[24px] md:text-[64px]">
+                <span className=" text-white italic font-[700] text-[24px] md:text-[64px]">
                   inspiration
                 </span>{" "}
                 in every turn
               </div>
-              <div>
+              {/* <div>
                 <img
                   className="mt-[-15px] mr-[60px] md:mr-[0] w-[90px] md:w-full h-[9px] md:mt-[-11px]"
                   loading="lazy"
                   src={sign}
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           <iframe

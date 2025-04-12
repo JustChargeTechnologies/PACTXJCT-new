@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import vision1 from "../../assets/Vision1.png";
+import sign from "../../assets/About/Sign.png";
 
 const CollaborativeApproach = () => {
   const images = [
@@ -40,11 +41,19 @@ const CollaborativeApproach = () => {
                 <div className="text-center">OUR COLLABORATIVE APPROACH</div>
                 <div className="min-w-[76px] border-1 h-0  ml-4"></div>
               </h2>
-              <div className="text-[40px] mt-3 leading-[50px] font-bold">
+              <div className="text-[36px] mt-3 leading-[50px] font-bold">
                 Our approach is modeled around bringing{" "}
-                <span className="text-[#8EC641] margarine-regular">
+                <span className="text-[#8EC641] italic">
                   change at all levels
                 </span>
+              </div>
+              <div className="pt-2">
+                <img
+                  className=" relative xl:left-112 w-[120px] md:w-full h-[9px]  md:mt-[-11px]"
+                  loading="lazy"
+                  src={sign}
+                  alt=""
+                />
               </div>
               <div className="text-[#6E6E6E] leading-[26px] mt-5 font-normal ">
                 The Pact Foundation firmly believes that creating lasting change

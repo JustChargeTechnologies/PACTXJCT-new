@@ -7,7 +7,7 @@ const Donate = () => {
   return (
     <div>
       <div
-        className="relative md:mt-[100px] mt-[72px] text-white flex  justify-center  h-[230px] bg-cover bg-center bg-no-repeat"
+        className="relative  text-white flex  justify-center  h-[230px] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${above_bg})` }}
       >
         <div className="w-[93%] 2xl:w-[79%] nunito-sans">

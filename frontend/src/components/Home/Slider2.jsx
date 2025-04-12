@@ -11,12 +11,12 @@ const Slider2 = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="relative md:mt-[90px] mt-[72px] bg-cover bg-center bg-no-repeat"
+      className="relative  bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bgSlider})` }}
     >
       <div className="h-auto md:max-h-[632px] w-full bg-[#F7941DCC]  py-8 flex flex-col md:flex-row justify-center md:justify-around  items-center text-white z-30">
         <div className="left-section flex-1 flex flex-col justify-center pl-4 md:pr-2 md:pl-28">
-          <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] mt-[-30px] md:text-[54px]">
+          <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] mt-[-30px] md:mt-[-90px] md:text-[54px]">
             <p>Inspiring change</p>
             <span
               className=" margarine-regular bg-white text-[#2282B4] px-4 py-2 rounded-full inline-block text-center mt-4"
@@ -25,7 +25,7 @@ const Slider2 = () => {
               enriching lives
             </span>
           </h2>
-          <p className="font-sans  text-[13px] md:text-[16px] font-[400] md:pr-5 md:w-[601px] md:h-[216px] mt-6">
+          <p className="nunito-sans  text-[13px] md:text-[16px] font-[400] md:pr-5 md:w-[601px] md:h-[216px] mt-6">
             Welcome to the Pact Foundation, a people's NGO and think tank
             dedicated to creating positive societal change. Our mission is to
             pave the way for a brighter tomorrow by working collaboratively with
@@ -38,7 +38,7 @@ const Slider2 = () => {
           <div>
             
             <div className="flex flex-row  w-[10.94rem] md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
-              <Link to='/about' className="bg-white text-black w-[50%] flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[15px] leading-[100%] tracking-[0%] text-right">
+              <Link to='/about' className="bg-white text-black w-[50%] nunito-sans flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[16px] leading-[100%] tracking-[0%] text-right">
                 What We Do
               </Link>
               <button
@@ -46,7 +46,7 @@ const Slider2 = () => {
                 className="flex items-center justify-center gap-2 w-[50%] text-white "
               >
                 <span className="flex items-center justify-center rounded-md ">
-                  <FaYoutube className=" bg-white text-amber-500  rounded-sm px-[0.7px] py-[1px] w-6 h-6" />
+                  <FaYoutube className=" bg-white text-amber-500 px-[1px] py-[1px] w-4 h-4" />
                 </span>
                 Play Video
               </button>

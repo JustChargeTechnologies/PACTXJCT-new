@@ -39,9 +39,9 @@ const OurProject = () => {
               <div>OUR PROJECTS</div>
               <div className="min-w-[76px] border-1 h-0  ml-4"></div>
             </div>
-            <h2 className="text-[40px] nunito-sans mt-3 font-[800] ">
+            <h2 className="text-[36px] nunito-sans mt-3 font-[800] ">
               Explore our{" "}
-              <span className="text-[#8EC641] margarine-regular">current</span>{" "}
+              <span className="text-[#8EC641] italic">current</span>{" "}
               running programs
             </h2>
           </div>

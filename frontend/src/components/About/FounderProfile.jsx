@@ -41,7 +41,7 @@ const FounderProfile = () => {
                   Dr Ashwin Fernandes
                 </div>
               </div>
-              <div className=" text-[15px] md:text-[18px] leading-[26px] font-[400] flex flex-col gap-[12px]">
+              <div className=" text-[14px] md:text-[16px] leading-[26px] font-[400] flex flex-col gap-[12px]">
                 <div>
                   Dr Ashwin Jerome Fernandes is shaping education in India in a
                   unique and powerful way. He goes beyond the usual role of a

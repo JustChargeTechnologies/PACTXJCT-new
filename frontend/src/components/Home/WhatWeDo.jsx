@@ -14,9 +14,9 @@ const WhatWeDo = () => {
         <div className="px-[30px] pt-[25px] md:pt-[40px] md:px-[60px] md:pl-[90px]">
           <h3 className="text-[#E3F5FF] flex items-center font-normal text-[12px]  md:text-[14px] pb-3">
             <div>WHAT WE DO</div>
-            <div className="min-w-[76px] border-1 h-0  ml-4"></div>
+            <div className="min-w-[76px] xl:min-w-[315px] border-t border-gray-300 ml-4"></div>
           </h3>
-          <p className=" nunito-sans font-extrabold text-[32.21px] md:text-[40px] text-[#FFFF] leading-[40px] md:leading-[50px] ">
+          <p className=" nunito-sans font-extrabold md:mt-3 text-[32.21px] md:text-[40px] text-[#FFFF] leading-[40px] md:leading-[50px] ">
             Changing the future of Goa's socio economic landscape
           </p>
           <p className="font-normal text-[13px] md:text-[16px] leading-[26px] tracking-[0px] nunito-sans text-[#E3F5FF] mt-6 ">

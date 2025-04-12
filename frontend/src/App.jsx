@@ -16,12 +16,14 @@ import ScrollToTop from "./components/ScrolltoTop";
 import SupportUs from "./pages/SupportUs";
 import Sponsor from "./pages/Sponsor";
 import Poilcy from "./pages/Poilcy";
+import Breadcrumb from "./components/Breadcrumb";
 
 const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop/>
       <Navbar />
+      <Breadcrumb/>
       <Routes>
         <Route
           path="/"

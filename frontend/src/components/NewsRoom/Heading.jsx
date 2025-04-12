@@ -6,7 +6,7 @@ const Heading = () => {
   return (
     <div
       style={{ backgroundImage: `url(${Heading_bg})` }}
-      className="md:mt-[99px] flex justify-center items-center mt-[74px] min-h-[300px] md:min-h-[300px] text-white relative bg-cover bg-center bg-no-repeat w-full"
+      className=" flex justify-center items-center  min-h-[300px] md:min-h-[300px] text-white relative bg-cover bg-center bg-no-repeat w-full"
     >
       <div className="flex nunito-sans flex-col justify-center items-center">
         <div className="flex justify-center items-center pb-6">

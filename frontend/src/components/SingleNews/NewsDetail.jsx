@@ -33,7 +33,7 @@ const NewsDetail = () => {
       <div>
         <div
           style={{ backgroundImage: `url(${NewsDetail_bg})` }}
-          className="md:mt-[99px] flex justify-center items-center mt-[74px] h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
+          className=" flex justify-center items-center  h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
         >
           <div className="flex nunito-sans flex-col justify-center items-center py-10 w-[93%] md:w-[79%]">
             <div className="flex justify-center items-center pb-6">
