@@ -81,7 +81,7 @@ const Sponsor = () => {
     >
       <div
         id="projects"
-        className="w-[90%] md:w-[85%] xl:w-[80%] mx-auto nunito-font"
+        className="w-[90%] md:w-[85%] xl:w-[80%] mx-auto nunito-sans"
       >
         <div className="flex pt-[50px] mb-[25px] items-center justify-center">
           <div className="border-[0.7px] mr-3 w-[40px] md:w-[59.26px] h-0"></div>

@@ -8,12 +8,12 @@ import vision1 from "../../assets/Vision1.png";
 
 const CollaborativeApproach = () => {
   const images = [
-    { src: image1, width: 216.3 },
-    { src: image1, width: 216.3 },
-    { src: image1, width: 216.3 },
-    { src: image1, width: 216.3 },
-    { src: image1, width: 216.3 },
-    { src: image1, width: 216.3 },
+    { src: image1, width: 216 + 20 },
+    { src: image1, width: 216 + 20 },
+    { src: image1, width: 216 + 20 },
+    { src: image1, width: 216 + 20 },
+    { src: image1, width: 216 + 20 },
+    { src: image1, width: 216 + 20 },
   ];
 
   const settings = {
@@ -40,9 +40,9 @@ const CollaborativeApproach = () => {
                 <div className="text-center">OUR COLLABORATIVE APPROACH</div>
                 <div className="min-w-[76px] border-1 h-0  ml-4"></div>
               </h2>
-              <div className="text-[40px] mt-3 leading-[50px] font-extrabold">
+              <div className="text-[40px] mt-3 leading-[50px] font-bold">
                 Our approach is modeled around bringing{" "}
-                <span className="text-[#8EC641] margarine-font">
+                <span className="text-[#8EC641] margarine-regular">
                   change at all levels
                 </span>
               </div>
@@ -57,22 +57,19 @@ const CollaborativeApproach = () => {
             </div>
           </div>
           <div className="lower mt-9">
-          <div className="slider-container relative overflow-hidden p-0 m-0 pb-[50px] min-h-[280px]">
-
+            <div className="slider-container overflow-hidden p-0 m-0 min-h-[220px] md:min-h-[240px]">
               <Slider {...settings}>
                 {images.map((img, index) => (
-                  <div
-                    key={index}
-                    className="flex gap-4 "
-                    style={{ width: img.width }}
-                  >
-                    <img
-                      src={img.src}
-                      alt={`Slide ${index + 1}`}
-                      style={{ width: "100%", borderRadius: "10px" }}
-                      className="ml-16 md:ml-0 min-h-[239px] object-cover"
-                      loading="lazy"
-                    />
+                  <div key={index} style={{ width: img.width }}>
+                    <div style={{ paddingRight: "20px" }}>
+                      <img
+                        src={img.src}
+                        alt={`Slide ${index + 1}`}
+                        style={{ width: "100%", borderRadius: "10px" }}
+                        className="ml-16 md:ml-0 min-h-[239px] object-cover"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 ))}
               </Slider>

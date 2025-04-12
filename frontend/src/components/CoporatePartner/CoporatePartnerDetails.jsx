@@ -8,7 +8,7 @@ const CoporatePartnerDetails = () => {
       className=" h-auto relative bg-cover bg-center bg-no-repeat w-full "
     >
       <div className="flex justify-center items-center bg-white/10">
-        <div className="w-[85%] md:w-[80%] text-[14px] nunito-font flex flex-col justify-center  items-center gap-[20px] my-[38px] md:my-[60px]">
+        <div className="w-[85%] md:w-[80%] text-[14px] nunito-sans flex flex-col justify-center  items-center gap-[20px] my-[38px] md:my-[60px]">
           <div className="flex justify-between flex-col gap-[32px] md:flex-row">
             <div className="left md:w-[48%] flex flex-col gap-[32px]">
               <div className="above p-[28px] md:p-[40px] bg-white rounded-2xl">

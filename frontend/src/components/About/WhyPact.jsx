@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const WhyPact = () => {
   return (
     <div id='whypact' className='flex h-full w-[85%] md:w-[78%]'>
-        <div className='min-h-[988px] nunito-font'>
+        <div className='min-h-[988px] nunito-sans'>
             <div className='text-[11px] md:text-[14px] font-[600] text-[#6E6E6E] flex items-center gap-3 mt-3 md:mt-10'><div>WHY US</div><div className='border-[0.7px] w-[40px] md:w-[59.26px] h-0 border-[#6E6E6E]'></div></div>
             <div className='font-[800] text-[24px] md:text-[40px] md:leading-[50px] mt-1 md:mt-7'>Why PACT</div>
             <div className='flex flex-col mt-4 md:mt-4 gap-[32px]'>

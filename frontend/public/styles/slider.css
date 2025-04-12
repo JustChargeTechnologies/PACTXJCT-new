@@ -1,13 +1,31 @@
-.margarine-font {
+/* .margarine-font {
     font-family: "Margarine", cursive;
   }
   .nunito-font {
     font-family: "Nunito Sans", sans-serif;
   }
   .slick-slide {
-    margin: 0 10px !important; /* Forces gap between slides */
+    margin: 0 10px !important;
+  } */
+@font-face {
+  font-family: Margarine;
+  src: url("../font/Margarine-Regular.ttf");
+}
+  .margarine-regular {
+    font-family: "Margarine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
+  /* .nunito-font {
+    font-family: "Nunito Sans", sans-serif;
+  } */
 
-  
-  
+.nunito-sans{
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}  
+
+
+
   

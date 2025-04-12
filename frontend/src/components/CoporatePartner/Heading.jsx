@@ -10,7 +10,7 @@ const Heading = () => {
           className="md:mt-[99px] mt-[74px] h-auto relative bg-cover bg-center bg-no-repeat w-full "
         >
           <div className="flex justify-center items-center bg-white/50">
-          <div className="w-[80%] text-[14px] nunito-font flex flex-col justify-center  items-center gap-[20px] mt-[38px] md:mt-[70px]">
+          <div className="w-[80%] text-[14px] nunito-sans flex flex-col justify-center  items-center gap-[20px] mt-[38px] md:mt-[70px]">
             <div className="flex items-center text-[12px] md:text-[14px] text-[#6E6E6E] ">
               <div className="w-[48px] md:w-[76px] border-1 h-0  mr-4"></div>
               <div>GET HELP</div>

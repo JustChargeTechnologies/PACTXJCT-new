@@ -35,7 +35,7 @@ const NewsDetail = () => {
           style={{ backgroundImage: `url(${NewsDetail_bg})` }}
           className="md:mt-[99px] flex justify-center items-center mt-[74px] h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
         >
-          <div className="flex nunito-font flex-col justify-center items-center py-10 w-[93%] md:w-[79%]">
+          <div className="flex nunito-sans flex-col justify-center items-center py-10 w-[93%] md:w-[79%]">
             <div className="flex justify-center items-center pb-6">
               <div className="min-w-[76px] border-1 border-white h-0  mr-4"></div>
               <div className="text-[11px] md:text-[14px] font-[600] text-[#E3F5FF]">
@@ -50,7 +50,7 @@ const NewsDetail = () => {
           </div>
         </div>
         <div className="w-full flex items-center justify-center">
-          <div className="nunito-font h-full flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%]">
+          <div className="nunito-sans h-full flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%]">
             <div className="leading-[24px] font-[400] tracking-wider flex flex-col gap-[16px]">
               {SingleNews.images[0].paragraph || "No description available."}
             </div>

@@ -54,7 +54,7 @@ const ContactDetails = () => {
           className=" w-[100%] md:w-[120%]  bg-green-200 min-h-[655px] flex  justify-center"
           style={{ backgroundImage: `url(${contact_bg})` }}
         >
-          <div className="flex flex-col justify-center items-center gap-[40px] nunito-font px-10 w-full">
+          <div className="flex flex-col justify-center items-center gap-[40px] nunito-sans px-10 w-full">
             <div className="text-white font-[700] text-[40px] mt-[49px] w-[92%] md:w-[65%]">
               Contact Us
             </div>

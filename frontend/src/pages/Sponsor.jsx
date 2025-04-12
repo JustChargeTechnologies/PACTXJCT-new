@@ -38,7 +38,7 @@ const Sponsor = () => {
         className="md:mt-[99px] flex justify-center items-center mt-[74px] h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
       >
         <div className="w-[93%] md:w-[79%]">
-          <div className="flex my-6 md:my-18 nunito-font  flex-wrap justify-center md:justify-normal">
+          <div className="flex my-6 md:my-18 nunito-sans  flex-wrap justify-center md:justify-normal">
             <div className="min-w-[337px] min-h-[204px] md:mt-[50px] md:min-w-[256px] md:min-h-[186.36px] ">
               {sponsor.imgUrl && sponsor.imgUrl.url ? (
                 <img
@@ -59,7 +59,7 @@ const Sponsor = () => {
                 <div className="border-1 border-white w-[80px] ml-5"></div>
               </div>
               <div className="mt-2">
-                <div className=" margarine-font text-[22px] md:text-[48px] ">
+                <div className=" margarine-regular text-[22px] md:text-[48px] ">
                   {sponsor.title}
                 </div>
               </div>

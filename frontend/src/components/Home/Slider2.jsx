@@ -4,7 +4,7 @@ import bgSlider from "../../assets/bgSlider.png";
 import "../../../public/styles/slider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { FaYoutubeSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Slider2 = () => {
@@ -14,18 +14,18 @@ const Slider2 = () => {
       className="relative md:mt-[90px] mt-[72px] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bgSlider})` }}
     >
-      <div className="h-auto md:max-h-[632px] w-full bg-[#F7941DCC]  py-8 pl-4 md:pr-26 md:pl-28 flex flex-col md:gap-6 md:flex-row justify-center md:justify-around  items-center text-white z-30">
-        <div className="left-section flex-1 flex flex-col justify-center ">
-          <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] md:text-[56px]">
+      <div className="h-auto md:max-h-[632px] w-full bg-[#F7941DCC]  py-8 flex flex-col md:flex-row justify-center md:justify-around  items-center text-white z-30">
+        <div className="left-section flex-1 flex flex-col justify-center pl-4 md:pr-2 md:pl-28">
+          <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] mt-[-30px] md:text-[54px]">
             <p>Inspiring change</p>
             <span
-              className="margarine-font bg-white text-[#2282B4] px-4 py-2 rounded-full inline-block text-center mt-4"
+              className=" margarine-regular bg-white text-[#2282B4] px-4 py-2 rounded-full inline-block text-center mt-4"
               
             >
               enriching lives
             </span>
           </h2>
-          <p className="font-nunito  text-[13px] md:text-[17px]  md:w-[601px] md:h-[216px] mt-6">
+          <p className="font-sans  text-[13px] md:text-[16px] font-[400] md:pr-5 md:w-[601px] md:h-[216px] mt-6">
             Welcome to the Pact Foundation, a people's NGO and think tank
             dedicated to creating positive societal change. Our mission is to
             pave the way for a brighter tomorrow by working collaboratively with
@@ -36,8 +36,8 @@ const Slider2 = () => {
             fostering a culture of inclusivity.
           </p>
           <div>
-            {/* Buttons */}
-            <div className="flex flex-row my-3 w-[10.94rem] md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
+            
+            <div className="flex flex-row  w-[10.94rem] md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
               <Link to='/about' className="bg-white text-black w-[50%] flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[15px] leading-[100%] tracking-[0%] text-right">
                 What We Do
               </Link>
@@ -46,7 +46,7 @@ const Slider2 = () => {
                 className="flex items-center justify-center gap-2 w-[50%] text-white "
               >
                 <span className="flex items-center justify-center rounded-md ">
-                  <FaYoutubeSquare className="bg-amber-600 text-white w-6 h-6" />
+                  <FaYoutube className=" bg-white text-amber-500  rounded-sm px-[0.7px] py-[1px] w-6 h-6" />
                 </span>
                 Play Video
               </button>
@@ -56,7 +56,7 @@ const Slider2 = () => {
             {isOpen && (
               <div className="fixed inset-0  bg-black/10 backdrop-blur-lg flex items-center justify-center z-50 ">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden  min-w-[70%]  relative">
-                  {/* Close Button */}
+              
                   <button
                     onClick={() => setIsOpen(false)}
                     className="absolute top-2 right-2 bg-white text-black rounded-full p-2 shadow-lg border border-gray-400"
@@ -79,7 +79,7 @@ const Slider2 = () => {
             )}
           </div>
         </div>
-        <div className="right-section flex-1 flex justify-center md:mr-27 mt-4">
+        <div className="right-section flex-1 flex justify-center md:mr-27 mt-4 overflow-hidden">
           <Carousel
             autoPlay
             interval={3000}
@@ -88,28 +88,28 @@ const Slider2 = () => {
             showStatus={false}
             showIndicators={true}
             stopOnHover={true}
-            className="md:w-[100%] w-[90%] mx-auto pb-5"
+            className="md:w-[100%] w-[90%] mx-auto pb-5 "
           >
-            <div className="w-[600px] h-[300px] md:h-[500px]">
+            <div className="w-full h-[300px] md:h-[500px] overflow-x-hidden">
               <img
                 src={caroselUP}
-                className="w-[450px]  h-full object-cover object-center rounded-lg"
+                className="w-full  h-full object-cover object-center rounded-lg"
                 alt="Slide 1"
                 loading="lazy"
               />
             </div>
-            <div className="w-[600px] h-[300px] md:h-[500px]">
+            <div className="w-full h-[300px] md:h-[500px]  overflow-x-hidden">
               <img
                 src={caroselUP}
-                className="w-[450px] h-full object-cover object-center rounded-lg"
+                className="w-full h-full object-cover object-center rounded-lg"
                 alt="Slide 2"
                 loading="lazy"
               />
             </div>
-            <div className="w-[600px] h-[300px] md:h-[500px]">
+            <div className="w-full h-[300px] md:h-[500px]  overflow-x-hidden">
               <img
                 src={caroselUP}
-                className="w-[450px] h-full object-cover object-center rounded-lg"
+                className="w-full h-full object-cover object-center rounded-lg"
                 alt="Slide 3"
                 loading="lazy"
               />

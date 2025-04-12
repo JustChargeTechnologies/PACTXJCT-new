@@ -2,7 +2,7 @@
 import React, { useContext, useEffect } from "react";
 import "../../../public/styles/slider.css";
 import { FaArrowCircleRight } from "react-icons/fa";
-import vision1 from "../../assets/Vision1.png";
+import vision1 from "../../assets/Home/project_bg.webp";
 import { ProjectDataContext } from "../../context/ProjectContext";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -31,17 +31,17 @@ const OurProject = () => {
       className="relative h-auto bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${vision1})` }}
     >
-      <div className=" bg-[#EDF8FFB2]  h-auto  w-full">
+      <div className=" h-auto  w-full">
         <div className="heading-section flex justify-center">
           <div className=" text-center py-5 mb-5  ">
-            <div className="text-[14px] flex items-center md:mt-8  justify-center text-[#6E6E6E] nunito-font font-semibold">
+            <div className="text-[14px] flex items-center md:mt-8  justify-center text-[#6E6E6E] nunito-sans font-semibold">
               <div className="min-w-[76px] border-1 h-0  mr-4"></div>
               <div>OUR PROJECTS</div>
               <div className="min-w-[76px] border-1 h-0  ml-4"></div>
             </div>
-            <h2 className="text-[40px] nunito-font mt-3 font-[800] ">
+            <h2 className="text-[40px] nunito-sans mt-3 font-[800] ">
               Explore our{" "}
-              <span className="text-[#8EC641] margarine-font">current</span>{" "}
+              <span className="text-[#8EC641] margarine-regular">current</span>{" "}
               running programs
             </h2>
           </div>
@@ -76,10 +76,10 @@ const OurProject = () => {
                     </div>
                     <div className="right-section max-w-[520px] px-4 md:px-10 mt-[-120px] md:mt-0 h-auto  py-8 md:py-10   mx-auto">
                       <div className="">
-                        <h2 className="nunito-font font-[700]  text-[24px]">
+                        <h2 className="nunito-sans font-[700]  text-[24px]">
                           {item.title}
                         </h2>
-                        <div className="text-[16px] leading-[154%] mt-4 tracking-[-2%] nunito-font font-[300]">
+                        <div className="text-[16px] leading-[154%] mt-4 tracking-[-2%] nunito-sans font-[300]">
                           {item.aboutProject}
                         </div>
                         <Link

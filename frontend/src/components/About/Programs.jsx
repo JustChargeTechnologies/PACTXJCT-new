@@ -57,7 +57,7 @@ const Programs = () => {
   };
 
   return (
-    <div id="projects" className="w-[90%] md:w-[85%] xl:w-[78%] mx-auto nunito-font">
+    <div id="projects" className="w-[90%] md:w-[85%] xl:w-[78%] mx-auto nunito-sans">
       <div>
         <div className="flex pt-[50px] text-[#6E6E6E] items-center">
           <div className="text-[12px] md:text-[14px]">STAY UPDATED</div>

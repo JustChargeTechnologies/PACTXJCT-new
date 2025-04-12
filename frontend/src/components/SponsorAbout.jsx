@@ -123,7 +123,7 @@ const SponsorAbout = ({ description, images = [] }) => {
                   />
                 </div>
               )}
-              <div className="below nunito-font bg-white my-[15px] mb-[50px] p-[28px] py-[35px] rounded-2xl">
+              <div className="below nunito-sans bg-white my-[15px] mb-[50px] p-[28px] py-[35px] rounded-2xl">
                 <div>
                   <div className="text-[20px] font-semibold">
                     More About Government Primary School, Duler

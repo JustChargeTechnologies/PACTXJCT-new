@@ -16,10 +16,10 @@ const WhatWeDo = () => {
             <div>WHAT WE DO</div>
             <div className="min-w-[76px] border-1 h-0  ml-4"></div>
           </h3>
-          <p className=" nunito-font font-extrabold text-[32.21px] md:text-[40px] text-[#FFFF] leading-[40px] md:leading-[50px] ">
+          <p className=" nunito-sans font-extrabold text-[32.21px] md:text-[40px] text-[#FFFF] leading-[40px] md:leading-[50px] ">
             Changing the future of Goa's socio economic landscape
           </p>
-          <p className="font-normal text-[13px] md:text-[16px] leading-[26px] tracking-[0px] nunito-font text-[#E3F5FF] mt-6 ">
+          <p className="font-normal text-[13px] md:text-[16px] leading-[26px] tracking-[0px] nunito-sans text-[#E3F5FF] mt-6 ">
             As a think tank and changemaker, we actively collaborate with
             stakeholders from all walks of life, aiming to forge a path toward
             meaningful societal transformation. Our team of experts, policy
@@ -42,10 +42,10 @@ const WhatWeDo = () => {
                   <FaGraduationCap className="inline h-[28px] w-[28px] bg-white text-black " />
                 </div>
                 <div className="ml-4">
-                  <h2 className="text-[20px] md:text-[24px] nunito-font leading-[100%]  font-bold ">
+                  <h2 className="text-[20px] md:text-[24px] nunito-sans leading-[100%]  font-bold ">
                     Transform Education
                   </h2>
-                  <p className="font-normal text-[13px] md:text-[16px] leading-[160%] mt-[12px] tracking-[0px] nunito-font  text-[#E3F5FF]">
+                  <p className="font-normal text-[13px] md:text-[16px] leading-[160%] mt-[15px] tracking-[0px] nunito-sans  text-[#E3F5FF]">
                     We firmly believe that education is the cornerstone of
                     progress. By collaborating with governments and educational
                     institutions, we advocate for reforms that ensure quality
@@ -60,10 +60,10 @@ const WhatWeDo = () => {
                   <HiUserGroup className="inline h-[28px] w-[28px] bg-white text-black " />
                 </div>
                 <div className="ml-4">
-                  <h2 className="text-[20px] md:text-[24px] nunito-font leading-[100%] font-bold ">
+                  <h2 className="text-[20px] md:text-[24px] nunito-sans leading-[100%] font-bold ">
                     Empower Women
                   </h2>
-                  <p className="font-normal text-[13px] md:text-[16px] mt-[12px] leading-[160%] tracking-[0px] nunito-font  text-[#E3F5FF]">
+                  <p className="font-normal text-[13px] md:text-[16px] mt-[15px] leading-[160%] tracking-[0px] nunito-sans  text-[#E3F5FF]">
                     Empowering women is not just a goal; it's a necessity. We
                     strive to create equal opportunities, challenge stereotypes,
                     and break down societal barriers. Our initiatives aim to
@@ -77,10 +77,10 @@ const WhatWeDo = () => {
                   <FaHandFist className="inline h-[28px] w-[28px] bg-white text-black " />
                 </div>
                 <div className="ml-4">
-                  <h2 className="text-[20px] md:text-[24px] nunito-font leading-[100%] font-bold ">
+                  <h2 className="text-[20px] md:text-[24px] nunito-sans leading-[100%] font-bold ">
                     Equip the Youth
                   </h2>
-                  <p className="font-normal text-[13px] md:text-[16px] mt-[12px] leading-[160%] tracking-[0px] nunito-font  text-[#E3F5FF]">
+                  <p className="font-normal text-[13px] md:text-[16px] mt-[15px] leading-[160%] tracking-[0px] nunito-sans  text-[#E3F5FF]">
                     The potential of our youth is boundless. Through skill
                     training and capacity-building programs, we unleash their
                     talents and enable them to contribute effectively to the

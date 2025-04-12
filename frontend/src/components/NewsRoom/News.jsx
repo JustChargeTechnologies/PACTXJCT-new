@@ -36,7 +36,7 @@ const News = () => {
       style={{ backgroundImage: `url(${NewsBg})` }}
       className="bg-cover bg-center bg-no-repeat w-full h-auto flex justify-center items-center"
     >
-      <div className="w-[90%] md:w-[79%] bg-white my-[70px] rounded-xl nunito-font">
+      <div className="w-[90%] md:w-[79%] bg-white my-[70px] rounded-xl nunito-sans">
         <div className="p-[20px] flex flex-col gap-[30px]">
           <div className="flex text-[#6E6E6E] text-[11px] md:text-[14px] font-[600] leading-[28px] capitalize  items-center">
             <div>Trending news</div>

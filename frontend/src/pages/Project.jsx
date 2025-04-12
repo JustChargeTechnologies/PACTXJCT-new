@@ -34,7 +34,7 @@ const Project = () => {
       ></div>
       <div className="bg-[#231F20] h-[50px] md:h-[170px] relative border-b-4 border-[#231F20] "></div>
       <div className="absolute top-[74px] md:top-[99px] w-full flex flex-col justify-center items-center">
-        <div className="text-[24px] md:text-[40px] text-center md:leading-[50px] font-[800] nunito-font pt-[24px] md:pt-[60px]">
+        <div className="text-[24px] md:text-[40px] text-center md:leading-[50px] font-[800] nunito-sans pt-[24px] md:pt-[60px]">
           {singleProject ? singleProject.title : "Loading..."}
         </div>
         <img
@@ -45,7 +45,7 @@ const Project = () => {
         />
       </div>
       <div className="bg-[#231F20] w-full flex items-center justify-center ">
-        <div className=" text-white nunito-font h-full  flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%] ">
+        <div className=" text-white nunito-sans h-full  flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%] ">
           <div>{singleProject ? singleProject.aboutProject : "Loading..."}</div>
           {singleProject
             ? singleProject.description

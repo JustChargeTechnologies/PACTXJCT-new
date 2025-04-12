@@ -10,7 +10,7 @@ const VolunteerDetails = () => {
       className="h-auto relative bg-cover bg-center bg-no-repeat w-full flex flex-col justify-center items-center "
       style={{ backgroundImage: `url(${Volunteer_bg1})` }}
     >
-      <div className="text-white w-[85%] md:w-[80%] nunito-font flex flex-col gap-[10px] md:gap-[22px] my-[45px]">
+      <div className="text-white w-[85%] md:w-[80%] nunito-sans flex flex-col gap-[10px] md:gap-[22px] my-[45px]">
         <div className="flex items-center text-[14px] text-[#E3F5FF]">
           <div>Volunteer</div>
           <div className="w-[48px] md:w-[76px] border-1 h-0  ml-4"></div>

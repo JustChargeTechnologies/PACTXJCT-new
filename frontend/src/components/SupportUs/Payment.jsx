@@ -187,7 +187,7 @@ const Payment = () => {
         style={{ backgroundImage: `url(${below_bg})` }}
       >
         {" "}
-        <div className="w-[93%] md:w-[78%] nunito-font">
+        <div className="w-[93%] md:w-[78%] nunito-sans">
           <div className="w-full  py-10 px-4">
             <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2">
               {/* Left - Image with overlay text */}

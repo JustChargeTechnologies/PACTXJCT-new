@@ -17,7 +17,7 @@ const FounderProfile = () => {
           className="min-h-[856px]  rounded-2xl w-[90%] md:w-[79%]"
           style={{ backgroundImage: `url(${About_bg})` }}
         >
-          <div className="flex py-6 px-4  gap-[25px] flex-col md:flex-row md:my-[43px] md:mx-[60px] nunito-font justify-center ">
+          <div className="flex py-6 px-4  gap-[25px] flex-col md:flex-row md:my-[43px] md:mx-[60px] nunito-sans justify-center ">
             <div className="block  md:hidden">
               <div className="text-white flex items-center">
                 <div className="text-[14px] md:text-[20px] font-[600]  leading-[28px] ">
