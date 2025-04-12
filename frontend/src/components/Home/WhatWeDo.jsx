@@ -6,7 +6,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi2";
 
 import { FaHandFist } from "react-icons/fa6";
-
+// hhjhjh
 const WhatWeDo = () => {
   return (
     <div className=" h-auto w-full ">
