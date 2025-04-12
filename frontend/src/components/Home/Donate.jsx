@@ -12,7 +12,7 @@ const Donate = () => {
       style={{ backgroundImage: `url(${vision1})` }}
     >
       <div className=" bg-[#FFF5E999] h-auto w-full flex justify-center items-center   py-10">
-        <div className="w-[85%] min-h-[300px] object-contain  rounded-3xl max-auto"
+        <div className="w-[85%] md:w-[79%] min-h-[300px] object-contain  rounded-3xl max-auto"
         style={{ backgroundImage: `url(${bg})` }}>
           <div className="flex flex-col px-2 py-1 md:px-15 md:py-10 justify-center items-center">
             <h2 className="text-[#231F20] font-bold text-[27.18px] md:text-[40px] leading-[50px] text-center">Join hands in the journey</h2>
