@@ -35,7 +35,7 @@ const Sponsor = () => {
     <div>
       <div
         style={{ backgroundImage: `url(${sponsor_bg})` }}
-        className="md:mt-[99px] flex justify-center items-center mt-[74px] h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
+        className="flex justify-center items-center h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
       >
         <div className="w-[93%] md:w-[79%]">
           <div className="flex my-6 md:my-18 nunito-sans  flex-wrap justify-center md:justify-normal">

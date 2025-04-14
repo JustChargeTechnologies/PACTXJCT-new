@@ -2,9 +2,7 @@ import React from "react";
 import WhatWeDoImg from "../../assets/WhatWeDo2.webp";
 import "../../../public/styles/slider.css";
 import { FaGraduationCap } from "react-icons/fa";
-
 import { HiUserGroup } from "react-icons/hi2";
-
 import { FaHandFist } from "react-icons/fa6";
 // hhjhjh
 const WhatWeDo = () => {
