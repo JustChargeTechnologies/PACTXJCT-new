@@ -67,7 +67,7 @@ const Footer = () => {
               <input
                 value={Email}
                 onChange={(e)=>{Setemail(e.target.value)}}
-                className="bg-white text-black h-11  text-[18px] p-3"
+                className="bg-white text-black h-11  text-[18px] p-3 rounded-sm"
                 type="text"
                 placeholder="Email"
               />

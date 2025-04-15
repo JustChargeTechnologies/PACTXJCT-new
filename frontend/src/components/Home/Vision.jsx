@@ -13,7 +13,7 @@ const Vision = () => {
         <div className="bg-[#FFF5E999]  h-auto ">
           <div className="flex justify-center items-center">
             <div className="w-[93%] xl:w-[88%] 2xl:w-[79%] flex flex-wrap justify-center md:justify-between items-center mx-auto">
-              <div className="left-section max-w-[621px] min-h-[372px]  md:mt-[-25px]">
+              <div className="left-section max-w-[621px] min-h-[372px]  md:mt-[-25px] mt-10">
                 <div className="flex flex-col ">
                   <h3 className="text-[#6E6E6E] text-[12px] flex items-center md:text-[14px] font-[500] pb-3">
                     <div>OUR VISION</div>

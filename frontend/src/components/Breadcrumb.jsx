@@ -8,7 +8,7 @@ const Breadcrumb = () => {
 
   return (
     <div className="bg-[#F7F6F4] md:mt-[102px] py-1 mt-[72px] text-sm flex justify-center items-center">
-      <nav className="w-[84%]">
+      <nav className="w-[93%] xl:w-[88%] 2xl:w-[79%]">
         <ol className="list-reset flex text-gray-700">
           <li>
             <Link to="/" className=" hover:underline text-[14px]">Home</Link>

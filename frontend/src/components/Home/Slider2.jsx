@@ -16,7 +16,7 @@ const Slider2 = () => {
     >
 
       <div className="flex bg-[#F7941DCC] items-center justify-center">
-        <div className="w-[93%] xl:w-[88%] 2xl:w-[79%]  h-auto py-8  flex flex-col md:flex-row justify-center md:justify-around  items-center text-white">
+        <div className="w-[93%] xl:w-[88%] 2xl:w-[79%]  h-auto py-3 md:py-8  flex flex-col md:flex-row justify-center md:justify-around  items-center text-white">
         <div className="left-section mt-10 flex-1 flex flex-col justify-center ">
           <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] mt-[-30px] md:mt-[-90px] md:text-[54px]">
             <p>Inspiring change</p>
@@ -39,7 +39,7 @@ const Slider2 = () => {
           </p>
           <div>
 
-            <div className="flex flex-row  w-[10.94rem] md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
+            <div className="flex flex-row  w-[10.94rem] my-3 md:my-0 md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
               <Link to='/about' className="bg-white text-black w-[50%] nunito-sans flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[16px] leading-[100%] tracking-[0%] text-right">
                 What We Do
               </Link>

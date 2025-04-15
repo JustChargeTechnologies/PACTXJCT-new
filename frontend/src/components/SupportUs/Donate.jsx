@@ -19,7 +19,7 @@ const Donate = () => {
             <div className="border-1 border-white w-[50px] md:w-[100px] ml-5 md:ml-11"></div>
           </div>
           <div className="text-center text-[25px] md:text-[52px] mt-6 margarine-regular">
-            Your support makes a difference for children
+            Your <span className="text-[#8EC641] italic">support</span> makes a difference for children
           </div>
         </div>
       </div>

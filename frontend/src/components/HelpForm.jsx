@@ -60,9 +60,9 @@ const HelpForm = ({ role }) => {
     }
   };
   return (
-    <div className="w-full bg-white h-auto ">
+    <div className="w-full bg-white h-auto rounded-xl mt-2 md:mt-0">
       <div>
-        <div className="bg-white text-black p-8 rounded-lg shadow-lg w-full ">
+        <div className="bg-white text-black p-8 rounded-3xl shadow-lg w-full ">
           {role === "Help" && (
             <h2 className="text-[24px] md:text-[40px] font-bold mb-6 text-black">
               Get assistance from PACT
