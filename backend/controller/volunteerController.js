@@ -33,3 +33,14 @@ module.exports.GetVolunteer = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
+module.exports.DeleteVolunteer=async (req,res) => {
+  try {
+    const {id}=req.params;
+    await VolunteerModel.deleteOne(id);
+    res.status(200).json({message : "Volunteer deleted succesfully"});
+  } catch (error) {
+    console.error("Error in DeleteVolunteers:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+}

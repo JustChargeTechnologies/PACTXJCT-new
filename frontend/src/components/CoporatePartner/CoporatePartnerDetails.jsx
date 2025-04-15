@@ -13,10 +13,10 @@ const CoporatePartnerDetails = () => {
             <div className="left md:w-[48%] flex flex-col gap-[32px]">
               <div className="above p-[28px] md:p-[40px] bg-white rounded-2xl">
                 <div className=" flex flex-col gap-[20px]">
-                  <div className="font-[800] text-[32px] md:text-[40px]">
+                  <div className="font-[800] text-[30px]">
                     Making a PACT Together
                   </div>
-                  <div className="text-[14px] md:text-[20px] font-[600]">
+                  <div className="text-[14px] md:text-[16px] font-[600]">
                     🌟 When you partner with PACT Foundation, you choose to
                     equip, empower, and motivate vulnerable communities to
                     realize their potential and transform their lives. At the
@@ -45,10 +45,10 @@ const CoporatePartnerDetails = () => {
               </div>
               <div className="bottom p-[28px] md:p-[40px] bg-white rounded-2xl">
                 <div className=" flex flex-col gap-[20px]">
-                  <div className="font-[800] text-[32px] md:text-[40px]">
+                  <div className="font-[800] text-[30px]">
                     Why Partner with Us?
                   </div>
-                  <div className="text-[14px] md:text-[20px] font-[600]">
+                  <div className="text-[14px] md:text-[16px] font-[600]">
                     🌟 By partnering with PACT Foundation, your organisation
                     benefits in several ways:
                   </div>
@@ -76,16 +76,16 @@ const CoporatePartnerDetails = () => {
             <div className="right md:w-[48%] flex flex-col gap-[32px]">
               <div className="above p-[28px] md:p-[40px] bg-white rounded-2xl">
                 <div className=" flex flex-col gap-[20px]">
-                  <div className="font-[800] text-[32px] md:text-[40px]">
+                  <div className="font-[800] text-[30px]">
                     How Can Your Organisation Partner with Us?
                   </div>
-                  <div className="text-[20px] font-[600]">
+                  <div className="text-[14px] md:text-[16px] font-[600]">
                     🌟 At PACT Foundation, we recognise that a one-size-fits-all
                     approach to partnerships is not the mostbeneficial. That’s
                     why we offer an array of options for your business to engage
                     and contribute:
                   </div>
-                  <div className="font-[600] text-[12px] md:text-[16px]">
+                  <div className="font-[600] text-[14px] md:text-[16px]">
                     <div>
                       Direct Funding: Your organisation can sponsor various
                       programs and initiatives that we run, whether it’s our
@@ -115,7 +115,7 @@ const CoporatePartnerDetails = () => {
               </div>
               <div className="bottom p-[28px] md:p-[40px] bg-white rounded-2xl">
                 <div className=" flex flex-col gap-[20px]">
-                  <div className="text-[16px] md:text-[20px] font-[600]">
+                  <div className="text-[14px] md:text-[16px] font-[600]">
                     Join PACT Foundation today and let’s work together to
                     contribute towards a better and equal world. For further
                     information on corporate partnerships, please contact us at

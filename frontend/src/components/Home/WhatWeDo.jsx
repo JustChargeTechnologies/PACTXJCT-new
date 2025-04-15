@@ -4,12 +4,13 @@ import "../../../public/styles/slider.css";
 import { FaGraduationCap } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi2";
 import { FaHandFist } from "react-icons/fa6";
-// hhjhjh
+
 const WhatWeDo = () => {
   return (
     <div className=" h-auto w-full ">
-      <div className="  h-auto  bg-[#2282B4] pt-8 md:pt-0">
-        <div className="px-[30px] pt-[25px] md:pt-[40px] md:px-[60px] md:pl-[90px]">
+      <div className="  h-auto  bg-[#2282B4] pt-8 md:pt-0 flex items-center justify-center">
+        <div className="w-[93%] xl:w-[88%] 2xl:w-[79%]">
+        <div className="pt-[25px] md:pt-[40px] ">
           <h3 className="text-[#E3F5FF] flex items-center font-normal text-[12px]  md:text-[14px] pb-3">
             <div>WHAT WE DO</div>
             <div className="min-w-[76px] xl:min-w-[315px] border-t border-gray-300 ml-4"></div>
@@ -29,11 +30,11 @@ const WhatWeDo = () => {
             <img
               src={WhatWeDoImg}
               alt="vision"
-              className=" w-[333.8px]  h-[403.47px] md:w-3xl md:h-[613px] md:ml-[90px]   "
+              className=" w-[333.8px]  h-[403.47px] md:w-3xl md:h-[613px]   "
               loading="lazy"
             />
           </div>
-          <div className="right-section max-w-[621px] p-5 mr-6 pt-6">
+          <div className="right-section max-w-[621px] p-5 pt-6">
             <div className="flex flex-col">
               <div className=" text-white flex mt-[32px] md:mt-[20px] ">
                 <div className="min-w-[22.54px] h-[22.54px]  md:min-w-[38px] md:h-[38px] flex justify-center items-center rounded-md bg-white ">
@@ -89,6 +90,7 @@ const WhatWeDo = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

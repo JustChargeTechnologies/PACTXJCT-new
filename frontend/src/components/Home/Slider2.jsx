@@ -11,16 +11,18 @@ const Slider2 = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="relative  bg-cover bg-center bg-no-repeat"
+      className="relative  bg-cover bg-center bg-no-repeat "
       style={{ backgroundImage: `url(${bgSlider})` }}
     >
-      <div className="h-auto md:max-h-[632px] w-full bg-[#F7941DCC]  py-8 flex flex-col md:flex-row justify-center md:justify-around  items-center text-white z-30">
-        <div className="left-section flex-1 flex flex-col justify-center pl-4 md:pr-2 md:pl-28">
+
+      <div className="flex bg-[#F7941DCC] items-center justify-center">
+        <div className="w-[93%] xl:w-[88%] 2xl:w-[79%]  h-auto py-8  flex flex-col md:flex-row justify-center md:justify-around  items-center text-white">
+        <div className="left-section mt-10 flex-1 flex flex-col justify-center ">
           <h2 className="font-nunito font-[600] text-[32.61px] leading-[120%] tracking-[0] mt-[-30px] md:mt-[-90px] md:text-[54px]">
             <p>Inspiring change</p>
             <span
-              className=" margarine-regular bg-white text-[#2282B4] px-4 py-2 rounded-full inline-block text-center mt-4"
-              
+              className=" margarine-regular bg-white text-[#2282B4] px-4 py-2 md:ml-[-18px] rounded-full inline-block text-center mt-4"
+
             >
               enriching lives
             </span>
@@ -36,7 +38,7 @@ const Slider2 = () => {
             fostering a culture of inclusivity.
           </p>
           <div>
-            
+
             <div className="flex flex-row  w-[10.94rem] md:w-[301px] h-[1.98rem] gap-[1.09rem] ">
               <Link to='/about' className="bg-white text-black w-[50%] nunito-sans flex justify-center items-center shadow-md font-nunito font-semibold text-[9.32px] md:text-[16px] leading-[100%] tracking-[0%] text-right">
                 What We Do
@@ -56,7 +58,7 @@ const Slider2 = () => {
             {isOpen && (
               <div className="fixed inset-0  bg-black/10 backdrop-blur-lg flex items-center justify-center z-50 ">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden  min-w-[70%]  relative">
-              
+
                   <button
                     onClick={() => setIsOpen(false)}
                     className="absolute top-2 right-2 bg-white text-black rounded-full p-2 shadow-lg border border-gray-400"
@@ -79,7 +81,7 @@ const Slider2 = () => {
             )}
           </div>
         </div>
-        <div className="right-section flex-1 flex justify-center md:mr-27 mt-4 overflow-hidden">
+        <div className="right-section flex-1 flex justify-center mt-4 overflow-hidden">
           <Carousel
             autoPlay
             interval={3000}
@@ -88,9 +90,10 @@ const Slider2 = () => {
             showStatus={false}
             showIndicators={true}
             stopOnHover={true}
+
             className="md:w-[100%] w-[90%] mx-auto pb-5 "
           >
-            <div className="w-full h-[300px] md:h-[500px] overflow-x-hidden">
+            <div className="w-full h-[300px] md:h-[450px] overflow-x-hidden">
               <img
                 src={caroselUP}
                 className="w-full  h-full object-cover object-center rounded-lg"
@@ -98,7 +101,7 @@ const Slider2 = () => {
                 loading="lazy"
               />
             </div>
-            <div className="w-full h-[300px] md:h-[500px]  overflow-x-hidden">
+            <div className="w-full h-[300px] md:h-[450px]  overflow-x-hidden">
               <img
                 src={caroselUP}
                 className="w-full h-full object-cover object-center rounded-lg"
@@ -106,7 +109,7 @@ const Slider2 = () => {
                 loading="lazy"
               />
             </div>
-            <div className="w-full h-[300px] md:h-[500px]  overflow-x-hidden">
+            <div className="w-full h-[300px] md:h-[450px]  overflow-x-hidden">
               <img
                 src={caroselUP}
                 className="w-full h-full object-cover object-center rounded-lg"
@@ -116,8 +119,10 @@ const Slider2 = () => {
             </div>
           </Carousel>
         </div>
+        </div>
       </div>
-    </div>
+      </div>
+
   );
 };
 

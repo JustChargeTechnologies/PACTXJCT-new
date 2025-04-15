@@ -33,6 +33,9 @@ const [arr, setArr] = React.useState<any[]>([]);
               <th scope="col" className="px-6 py-3">
                 Message
               </th>
+              <th scope="col" className="px-6 py-3">
+                Delete
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -50,6 +53,11 @@ const [arr, setArr] = React.useState<any[]>([]);
               <td className="px-6 py-4">
                {item.message}
               </td>
+              <td >
+                  <button className="rounded-xl h-10 w-16 ml-4 text-center bg-blue-600 text-white dark:bg-gray-800 whitespace-nowrap">
+                    Delete
+                  </button>
+                </td>
             </tr>
              
             ))}

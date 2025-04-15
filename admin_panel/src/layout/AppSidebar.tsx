@@ -15,7 +15,7 @@ const navItems: NavItem[] = [
     path: "/",
   },
   {
-    name: "Add Sponsers",
+    name: "Add Sponsors",
     path: "/sponser",
   },
   {

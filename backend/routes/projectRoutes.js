@@ -11,4 +11,6 @@ router.get('/getproject',projectController.Getprojects);
 
 router.get('/getproject/:id',projectController.GetOneprojects);
 
+router.put("/editproject/:id", authUser,projectController.EditProject);
+
 module.exports=router;

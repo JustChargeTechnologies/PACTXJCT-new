@@ -11,7 +11,7 @@ const Payments = () => {
         `${import.meta.env.VITE_BASE_URL}/getDonation`
       );
       setArr(res.data.donations);
-      console.log(res.data.donations);
+      // console.log(res.data.donations);
     };
     fetchData();
   }, []);

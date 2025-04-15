@@ -4,6 +4,7 @@ import Label from "../components/form/Label";
 import Input from "../components/form/input/InputField";
 import TextArea from "../components/form/input/TextArea";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [title, setTitle] = useState("");
@@ -102,6 +103,14 @@ const Projects = () => {
               >
                 ADD
               </button>
+            </div>
+            <div>
+              <Link
+                to="/allprojects"
+                className="w-full px-8 bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700"
+              >
+                SHOW ALL PROJECTS
+              </Link>
             </div>
           </div>
         </div>

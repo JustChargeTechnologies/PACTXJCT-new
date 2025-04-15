@@ -13,6 +13,8 @@ import { ScrollToTop } from "./components/common/ScrollToTop";
 import Contacts from "./pages/Contacts";
 import ProtectWrapper from "./context/ProtectWrapper";
 import Help from "./pages/Help";
+import AllProjects from "./components/projects/AllProjects";
+import EditProjects from "./components/projects/EditProjects";
 
 export default function App() {
   return (
@@ -61,7 +63,7 @@ export default function App() {
               path="/supportus/:id"
               element={
                 <ProtectWrapper>
-                  <SoloPayments/>
+                  <SoloPayments />
                 </ProtectWrapper>
               }
             />
@@ -73,7 +75,6 @@ export default function App() {
                 </ProtectWrapper>
               }
             />
-
 
             <Route
               path="/sponser"
@@ -93,7 +94,22 @@ export default function App() {
               }
             />
           </Route>
-
+          <Route
+            path="/allprojects"
+            element={
+              <ProtectWrapper>
+                <AllProjects />
+              </ProtectWrapper>
+            }
+          />
+          <Route
+            path="/allprojects/edit/:id"
+            element={
+              <ProtectWrapper>
+                <EditProjects />
+              </ProtectWrapper>
+            }
+          />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
 

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import React, { useContext, useEffect } from "react";
 import "../../../public/styles/slider.css";
@@ -23,8 +24,10 @@ const OurProject = () => {
         console.error("Error fetching project all data:", error);
       }
     };
-    fetchProject();
-  }, [setProject,project]);
+    if (!project || project.length === 0) {
+      fetchProject();
+    }
+  }, []);
 
   return (
     <div
@@ -48,7 +51,7 @@ const OurProject = () => {
         </div>
        
         <div className=" flex flex-col justify-center items-center w-full ">
-          <div className="w-[80%] xl:w-[80%] 2xl:w-[70%]">
+          <div className="w-[80%] xl:w-[80%] 2xl:w-[71%]">
             {project && project.length > 0 ? (
               project.map((item, indx) => (
                 <div
@@ -62,7 +65,7 @@ const OurProject = () => {
                       indx % 2 === 0 ? "flex-row" : "flex-row-reverse"
                     } justify-center md:justify-between flex-wrap`}
                   >
-                    <div className="left-section max-w-[537px] md:max-w-[560px] min-h-[334px] md:max-h-[379px]">
+                    <div className="left-section max-w-[537px] md:max-w-[555px] min-h-[334px] md:max-h-[379px]">
                       <img
                         className={`${
                           indx % 2 === 0

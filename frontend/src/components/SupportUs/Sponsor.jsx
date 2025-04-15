@@ -102,16 +102,16 @@ const Sponsor = () => {
                 sponsor.map((item, index) => (
                   <div
                     key={index}
-                    className="flex-none"
+                    className="flex-none xl:ml-4 2xl:ml-0"
                     style={
                       window.innerWidth >= 1200
                         ? { width: `${95.5 / visibleSlides}%` }
                         : { width: `${102 / visibleSlides}%` }
                     }
                   >
-                    <div className="flex justify-center items-center h-full">
-                      <div className="flex flex-col justify-between bg-white w-[280px] shadow-md h-full">
-                        <div className="h-[280px] w-[280px] overflow-hidden">
+                    <div className="flex justify-center items-center  h-full ">
+                      <div className="flex flex-col justify-between  bg-white w-[280px] shadow-md h-full">
+                        <div className="h-[280px] w-[280px]  overflow-hidden">
                           <img
                             src={item.imgUrl.url || ""}
                             alt="Project"

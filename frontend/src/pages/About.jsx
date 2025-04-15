@@ -26,9 +26,9 @@ const About = () => {
         <div className="flex flex-col items-center justify-center w-full min-h-[3200px] md:min-h-[1894px]   absolute top-0">
           <div className="min-h-[164px] w-[79%] flex justify-center items-center flex-col nunito-sans ">
             <div className="text-[11px] md:text-[14px] flex justify-center md:pt-12 items-center font-[600] md:leading-[28px] text-[#6E6E6E] ">
-              <div className="w-[48px] md:w-[76px] border-1  h-0  mr-4"></div>
+              <div className="w-[48px] md:w-[96px] border-t  h-0  mr-5"></div>
               <div>ABOUT US</div>
-              <div className="w-[48px] md:w-[76px] border-1 h-0  ml-4"></div>
+              <div className="w-[48px] md:w-[96px] border-t h-0  ml-5"></div>
             </div>
             <div className="flex flex-col justify-end items-end">
               <div className="font-[800] text-center text-[24px] md:text-[56px] py-3 md:leading-[50px] ">

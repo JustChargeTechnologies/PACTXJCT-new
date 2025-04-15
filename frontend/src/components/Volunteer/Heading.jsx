@@ -15,8 +15,8 @@ const Heading = () => {
             <div>OUR VOLUNTEERS</div>
             <div className="w-[48px] md:w-[76px] border-1 h-0  ml-4"></div>
           </div>
-          <div className="font-[800] text-[24px] md:text-[56px]">
-          Our volunteers are our <span className=" text-[#8EC641]">heroes</span> 
+          <div className="font-[800] text-[24px] md:text-[50px]">
+          Our volunteers are our <span className=" text-[#8EC641] italic">heroes</span> 
           </div>
           <div className="flex flex-col gap-4">
             <div className=" text-[14px] md:text-[16px] ">
