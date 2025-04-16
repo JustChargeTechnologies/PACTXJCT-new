@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import axios from "axios";
 
-const SponsorAbout = ({ description, images = [] }) => {
+const SponsorAbout = ({ description, images = [] , title ,country }) => {
 
   const responsive = {
     0: { items: 1 },
@@ -45,6 +45,7 @@ const SponsorAbout = ({ description, images = [] }) => {
         );
         if (response.status === 200) {
           const data = await response.data;
+          console.log(data);
           setSponsor(data);
         }
       } catch (error) {
@@ -103,9 +104,9 @@ const SponsorAbout = ({ description, images = [] }) => {
         style={{ backgroundImage: `url(${about_bg})` }}
         className="flex justify-center items-center h-auto relative bg-cover bg-center bg-no-repeat w-full"
       >
-        <div className="bg-white/50 flex justify-center w-full">
-          <div className="w-[93%] md:w-[79%]">
-            <div className="md:w-[60%]">
+        <div className="bg-white/50 flex justify-center items-center w-full">
+          <div className="w-[93%] md:w-[79%] flex justify-center flex-col">
+            <div className="md:w-[60%] mx-auto">
               {images.length === 0 ? (
                 ""
               ) : (
@@ -126,7 +127,7 @@ const SponsorAbout = ({ description, images = [] }) => {
               <div className="below nunito-sans bg-white my-[15px] mb-[50px] p-[28px] py-[35px] rounded-2xl">
                 <div>
                   <div className="text-[20px] font-semibold">
-                    More About Government Primary School, Duler
+                    More About {title}, {country}
                   </div>
                   <div className="border-1 border-black"></div>
                 </div>
@@ -138,7 +139,7 @@ const SponsorAbout = ({ description, images = [] }) => {
                         <p key={i}>{para.trim() && `${para.trim()}.`}</p>
                       ))
                   ) : (
-                    <p>No description available.</p>
+                    <div>No description available.</div>
                   )}
                 </div>
               </div>
@@ -175,14 +176,14 @@ const SponsorAbout = ({ description, images = [] }) => {
                               : { width: `${102 / visibleSlides}%` }
                           }
                         >
-                          <div className="flex justify-center items-center h-full">
-                            <div className="flex flex-col justify-between bg-white w-[280px] shadow-md h-full ">
+                          <div className="flex justify-center items-center h-full ">
+                            <div className="flex flex-col justify-between bg-white rounded-lg w-[280px] shadow-md h-full ">
                               <div className="h-[280px] w-[280px] overflow-hidden">
                                 <img
                                   src={item.imgUrl?.url || "default-image-path.jpg"}
                                   loading="lazy"
                                   alt="Project"
-                                  className="h-[280px] w-[280px] object-cover"
+                                  className="h-[280px] w-[280px] object-cover rounded-t-lg"
                                 />
                               </div>
                               <div className=" p-4">
@@ -196,7 +197,7 @@ const SponsorAbout = ({ description, images = [] }) => {
                                   <div className="ml-2">{item.city} , {item.country}</div>
                                 </div>
                                 <Link to={`/sponsor/${item._id}`} >
-                                  <div className="w-full py-[16px] mt-[35px]  bg-black text-white text-center">
+                                  <div className="w-full py-[16px] mt-[35px] rounded-md  bg-black text-white text-center">
                                   View details
                                   </div>
                                 </Link>

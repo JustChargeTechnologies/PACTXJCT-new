@@ -15,7 +15,7 @@ const Heading = () => {
           <div>GET HELP</div>
           <div className="w-[48px] md:w-[76px] border-1 h-0  ml-4"></div>
         </div>
-        <div className="font-[800] text-[24px] md:text-[56px]">By <span className=" text-[#8EC641]">YOUR</span> side!</div>
+        <div className="font-[800] text-[24px] md:text-[56px]">By <span className=" text-[#8EC641] italic">YOUR</span> side!</div>
       </div>
       </div>
     </div>

@@ -91,7 +91,7 @@ const Slider2 = () => {
             showIndicators={true}
             stopOnHover={true}
 
-            className="md:w-[100%] w-[90%] mx-auto pb-5 "
+            className="md:w-[100%] w-[98%] mx-auto pb-5 "
           >
             <div className="w-full h-[300px] md:h-[450px] overflow-x-hidden">
               <img

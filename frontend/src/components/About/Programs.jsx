@@ -84,7 +84,7 @@ const Programs = () => {
                     className="flex-none"
                     style={window.innerWidth>=1200 ? { width: `${95.5 / visibleSlides}%` }:{ width: `${100 / visibleSlides}%`}}
                   >
-                    <div className="flex flex-col justify-between rounded-lg bg-white p-6 shadow-md h-[350px]">
+                    <div className="flex flex-col  rounded-lg bg-white p-6 shadow-md h-[350px]">
                       <div className="h-[200px] w-full rounded-lg overflow-hidden">
                         <img
                           src={item.projectUrl?.url || ""}
@@ -93,11 +93,11 @@ const Programs = () => {
                           loading="lazy"
                         />
                       </div>
-                      <div className="flex flex-row items-center gap-2">
+                      <div className="flex flex-row pt-6 items-center gap-2">
                         <h2 className="text-[20px] text-black font-extrabold leading-8 tracking-wide">
                           {item.title || "Untitled"}
                         </h2>
-                        <FaArrowRight className="-rotate-45 text-black h-[20px] w-[20px]" />
+                        <FaArrowRight className="-rotate-45 text-black min-h-[20px] min-w-[20px]" />
                       </div>
                     </div>
                   </Link>

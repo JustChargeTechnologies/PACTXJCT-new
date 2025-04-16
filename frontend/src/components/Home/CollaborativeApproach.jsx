@@ -1,6 +1,12 @@
 import "../../../public/styles/slider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import image1 from "../../assets/Home/image1.png";
+import image1 from "../../assets/Home/image1.webp";
+import image2 from "../../assets/Home/image2.webp";
+import image3 from "../../assets/Home/image3.webp";
+import image4 from "../../assets/Home/image4.webp";
+import image5 from "../../assets/Home/image5.webp";
+import image6 from "../../assets/Home/image6.webp";
+import image7 from "../../assets/Home/image7.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,12 +15,13 @@ import sign from "../../assets/About/Sign.png";
 
 const CollaborativeApproach = () => {
   const images = [
-    { src: image1, width: 216 + 20 },
-    { src: image1, width: 216 + 20 },
-    { src: image1, width: 216 + 20 },
-    { src: image1, width: 216 + 20 },
-    { src: image1, width: 216 + 20 },
-    { src: image1, width: 216 + 20 },
+    { src: image1 },
+    { src: image2 },
+    { src: image3 },
+    { src: image4 },
+    { src: image5 },
+    { src: image6 },
+    { src: image7 },
   ];
 
   const settings = {
@@ -85,13 +92,13 @@ const CollaborativeApproach = () => {
             <div className="slider-container overflow-hidden p-0 m-0 min-h-[240px] pb-8">
               <Slider {...settings}>
                 {images.map((img, index) => (
-                  <div key={index} style={{ width: img.width }}>
-                    <div style={{ paddingRight: "20px" }}>
+                  <div key={index}  className="max-w-[236px] xl:max-w-[236px] 2xl:max-w-[276px]">
+                    <div className="mr-[30px] 2xl:mr-[50px]">
                       <img
                         src={img.src}
                         alt={`Slide ${index + 1}`}
                         style={{ width: "100%", borderRadius: "10px" }}
-                        className="ml-16 md:ml-0 min-h-[239px] object-cover"
+                        className="md:ml-33 2xl:ml-40 min-h-[239px] object-cover"
                         loading="lazy"
                       />
                     </div>

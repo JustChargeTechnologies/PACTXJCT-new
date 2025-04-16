@@ -12,6 +12,15 @@ const [arr, setArr] = React.useState<any[]>([]);
     };
     fetchData();
   }, []);
+  const onDeleteContact = async (id: string) => {
+    try {
+      const res= await axios.delete(`${import.meta.env.VITE_BASE_URL}/deletecontact/${id}`)
+      setArr(res.data.updatedContact);
+      // console.log(res.data);
+    } catch (error) {
+      console.log("deleteContact",error)
+    }
+  }
   return (
     <div>
       <h2 className="text-xl font-semibold text-gray-800 dark:text-white/90 mb-4">
@@ -54,7 +63,7 @@ const [arr, setArr] = React.useState<any[]>([]);
                {item.message}
               </td>
               <td >
-                  <button className="rounded-xl h-10 w-16 ml-4 text-center bg-blue-600 text-white dark:bg-gray-800 whitespace-nowrap">
+                  <button onClick={() => onDeleteContact(item._id)} className="rounded-xl h-10 w-16 ml-4 text-center bg-blue-600 text-white dark:bg-gray-800 whitespace-nowrap">
                     Delete
                   </button>
                 </td>

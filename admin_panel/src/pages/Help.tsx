@@ -11,6 +11,16 @@ const [arr, setArr] = React.useState<any[]>([]);
     };
     fetchData();
   }, []);
+
+  const onDeleteHelp = async (id: string) => {
+    try {
+      const res= await axios.delete(`${import.meta.env.VITE_BASE_URL}/deletehelp/${id}`)
+      setArr(res.data.updatedHelp);
+      // console.log(res.data);
+    } catch (error) {
+      console.log("deleteHelp",error)
+    }
+  }
     
   return (
     <div>
@@ -54,7 +64,7 @@ const [arr, setArr] = React.useState<any[]>([]);
                {item.message}
               </td>
               <td>
-                  <button className="rounded-xl h-10 w-16 ml-4 text-center bg-blue-600 text-white dark:bg-gray-800 whitespace-nowrap">
+                  <button onClick={() => onDeleteHelp(item._id)} className="rounded-xl h-10 w-16 ml-4 text-center bg-blue-600 text-white dark:bg-gray-800 whitespace-nowrap">
                     Delete
                   </button>
                 </td>

@@ -37,13 +37,13 @@ const Sponsor = () => {
         style={{ backgroundImage: `url(${sponsor_bg})` }}
         className="flex justify-center items-center h-auto text-white relative bg-cover bg-center bg-no-repeat w-full"
       >
-        <div className="w-[93%] md:w-[79%]">
+        <div className="w-[93%] md:w-[79%] flex justify-center items-center">
           <div className="flex my-6 md:my-18 nunito-sans  flex-wrap justify-center md:justify-normal">
-            <div className="min-w-[337px] min-h-[204px] md:mt-[50px] md:min-w-[256px] md:min-h-[186.36px] ">
+            <div className="min-w-[337px] min-h-[204px] md:min-w-[256px] md:min-h-[186.36px] ">
               {sponsor.imgUrl && sponsor.imgUrl.url ? (
                 <img
                   src={sponsor.imgUrl.url}
-                  className="object-cover bg-center bg-no-repeat w-[337px] h-[204px] md:w-[256px] md:h-[186.36px]"
+                  className="object-cover bg-center bg-no-repeat w-[337px] h-[204px] md:w-[356px] md:h-[343px]"
                   loading="lazy"
                   alt="sponsor_img"
                 />
@@ -68,7 +68,7 @@ const Sponsor = () => {
           </div>
         </div>
       </div>
-      <SponsorAbout description={sponsor.description} images={sponsor.images} />
+      <SponsorAbout description={sponsor.description} images={sponsor.images} title={sponsor.title} country={sponsor.country}/>
     </div>
   );
 };

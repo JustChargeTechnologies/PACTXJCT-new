@@ -77,7 +77,7 @@ const OurProject = () => {
                         alt=""
                       />
                     </div>
-                    <div className="right-section max-w-[520px] px-4 md:px-10 mt-[-120px] md:mt-0 h-auto  py-8 md:py-10   mx-auto">
+                    <div className="right-section max-w-[520px] px-4 md:px-10 mt-[-120px] md:mt-0 h-auto  py-8 md:pt-10   mx-auto">
                       <div className="">
                         <h2 className="nunito-sans font-[700]  text-[24px]">
                           {item.title}

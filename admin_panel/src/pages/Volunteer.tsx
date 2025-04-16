@@ -10,7 +10,7 @@ const Volunteer = () => {
         `${import.meta.env.VITE_BASE_URL}/getvolunteer`
       );
       setArr(res.data);
-      console.log(res.data);
+      // console.log(res.data);
     };
     fetchData();
   }, []);
@@ -18,7 +18,8 @@ const Volunteer = () => {
   const onDeleteVolunteer = async (id: string) => {
     try {
       const res= await axios.delete(`${import.meta.env.VITE_BASE_URL}/deletevolunteer/${id}`)
-      console.log(res.data);
+      setArr(res.data.updatedVolunteers);
+      // console.log(res.data);
     } catch (error) {
       console.log("deleteVolunteer",error)
     }

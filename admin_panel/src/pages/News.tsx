@@ -53,7 +53,8 @@ const News = () => {
     const formData = new FormData();
     formData.append("title", title);
     // Convert date to string "yyyy-MM-dd" if a date is selected
-    formData.append("date", date ? date.toISOString().split("T")[0] : "");
+    formData.append("date", date ? date.toLocaleDateString("en-CA") : "");
+
     formData.append("paragraph", JSON.stringify(para));
 
     images.forEach((image) => {

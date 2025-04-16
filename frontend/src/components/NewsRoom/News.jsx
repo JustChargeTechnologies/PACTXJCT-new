@@ -61,7 +61,7 @@ const News = () => {
                     {formatDate(`${item.date}`)}
                   </div>
                   <div className="text-[14px] text-[#7A7A7A] md:text-[16px]">
-                  {item.images[0]?.paragraph || ""}
+                  {item.images[0]?.paragraph.split("\n")[0] || ""}
                   </div>
                 </div>
               </Link>

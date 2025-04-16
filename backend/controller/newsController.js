@@ -29,10 +29,11 @@ module.exports.AddNews = async (req, res) => {
         paragraph: paragraphs[i],
       });
     }
+    const localDate = new Date(`${date}T00:00:00`);
     const addNews = await NewsModel.create({
       title,
       images: uploadImages,
-      date,
+      date :localDate,
     });
     // console.log(addNews);
 

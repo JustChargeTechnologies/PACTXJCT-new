@@ -25,3 +25,15 @@ module.exports.Getcontact=async(req,res)=>{
     }
 };
 
+module.exports.DeleteContact=async (req,res) => {
+    try {
+      const {id}=req.params;
+      await ContactModel.deleteOne({ _id: id });
+      const updatedContact = await ContactModel.find({});
+      res.status(200).json({updatedContact,message : "Help deleted succesfully"});
+    } catch (error) {
+      console.error("Error in DeleteHelp:", error);
+      res.status(500).json({ message: "Internal Server Error" });
+    }
+  }
+

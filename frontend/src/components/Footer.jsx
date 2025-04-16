@@ -9,7 +9,7 @@ const Footer = () => {
   const [Email, Setemail] = useState("");
   return (
     <div className="bg-[#231F20] w-full flex justify-center items-center">
-      <div className="w-[80%] 2xl:w-[75%] min-h-[222px]  text-white my-8">
+      <div className="w-[90%] md:w-[80%] 2xl:w-[78%] min-h-[222px]  text-white my-8">
         <div className="flex flex-wrap justify-between items-center gap-0 md:gap-8">
           <div className="max-w-[378px] min-h-[189px] order-2 md:order-1">
             <h3 className="nunito-sans font-bold text-[20px] md:mt-[-16px] leading-[30px]">

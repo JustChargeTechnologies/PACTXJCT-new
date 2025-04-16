@@ -33,3 +33,15 @@ module.exports.GetHelp = async (req, res) => {
         return res.status(500).json({ message: "Internal Server Error" });
     }
 }
+
+module.exports.DeleteHelp=async (req,res) => {
+  try {
+    const {id}=req.params;
+    await VolunteerModel.deleteOne({ _id: id });
+    const updatedHelp = await VolunteerModel.find({role:"Help"});
+    res.status(200).json({updatedHelp,message : "Help deleted succesfully"});
+  } catch (error) {
+    console.error("Error in DeleteHelp:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+}

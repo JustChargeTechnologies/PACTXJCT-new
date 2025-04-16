@@ -37,8 +37,9 @@ module.exports.GetVolunteer = async (req, res) => {
 module.exports.DeleteVolunteer=async (req,res) => {
   try {
     const {id}=req.params;
-    await VolunteerModel.deleteOne(id);
-    res.status(200).json({message : "Volunteer deleted succesfully"});
+    await VolunteerModel.deleteOne({ _id: id });
+    const updatedVolunteers = await VolunteerModel.find({role:"Volunteer"});
+    res.status(200).json({updatedVolunteers,message : "Volunteer deleted succesfully"});
   } catch (error) {
     console.error("Error in DeleteVolunteers:", error);
     res.status(500).json({ message: "Internal Server Error" });

@@ -14,9 +14,9 @@ const Heading = () => {
           <div className="text-[11px] md:text-[14px] font-[600] text-[#E3F5FF]">NEWSROOM</div>
           <div className="min-w-[76px] border-1 border-white h-0  ml-4"></div>
         </div>
-        <div className="text-center text-[24px] md:text-[50px] font-[800] text-[#E3F5FF]">
+        <div className="text-center text-[24px] md:text-[50px] font-[800] text-[#E3F5FF] leading-[100%]">
             <div>Stories, videos, news and info from</div>
-            <div>PACT Foundation</div>
+            <div className="text-[26px] md:text-[56px] text-white italic ">PACT Foundation</div>
         </div>
       </div>
     </div>
