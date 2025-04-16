@@ -27,5 +27,36 @@
 }  
 
 
+/* slider.css */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  bottom: -10px;
+  padding: 0;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button:before {
+  font-size: 0; /* Hide default dot */
+}
+
+.slick-dots li div {
+  transition: transform 0.3s ease;
+  color: black;
+  background-color: black;
+}
+
+.slick-dots li.slick-active div {
+  transform: scale(1.3);
+  color: black;
+  background-color: black;
+}
+
+
+
 
   

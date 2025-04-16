@@ -168,7 +168,7 @@ const SponsorAbout = ({ description, images = [] }) => {
                       sponsor.map((item, index) => (
                         <div
                           key={index}
-                          className="flex-none"
+                          className="flex-none mr-4"
                           style={
                             window.innerWidth >= 1200
                               ? { width: `${95.5 / visibleSlides}%` }
@@ -176,7 +176,7 @@ const SponsorAbout = ({ description, images = [] }) => {
                           }
                         >
                           <div className="flex justify-center items-center h-full">
-                            <div className="flex flex-col justify-between bg-white w-[280px] shadow-md h-full">
+                            <div className="flex flex-col justify-between bg-white w-[280px] shadow-md h-full ">
                               <div className="h-[280px] w-[280px] overflow-hidden">
                                 <img
                                   src={item.imgUrl?.url || "default-image-path.jpg"}
@@ -216,13 +216,13 @@ const SponsorAbout = ({ description, images = [] }) => {
                   <>
                     <button
                       onClick={scrollLeft}
-                      className="absolute left-[-8px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[50px] w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                      className="absolute left-[44px] md:left-[-8px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[38px] w-[38px]  md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
                     >
                       <MdKeyboardArrowLeft className="text-white text-2xl" />
                     </button>
                     <button
                       onClick={scrollRight}
-                      className="absolute right-[-2px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[50px] w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                      className="absolute right-[33px] md:right-[-2px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[38px] w-[38px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
                     >
                       <MdKeyboardArrowRight className="text-white text-2xl" />
                     </button>

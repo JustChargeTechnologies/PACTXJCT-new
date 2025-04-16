@@ -30,22 +30,22 @@ const Project = () => {
     <div>
       <div
         style={{ backgroundImage: `url(${Project_bg})` }}
-        className="md:mt-[99px] mt-[74px] min-h-[300px] md:min-h-[563px] relative bg-cover bg-center bg-no-repeat w-full"
+        className="min-h-[308px] md:min-h-[563px] relative bg-cover bg-center bg-no-repeat w-full"
       ></div>
       <div className="bg-[#231F20] h-[50px] md:h-[170px] relative border-b-4 border-[#231F20] "></div>
-      <div className="absolute top-[74px] md:top-[99px] w-full flex flex-col justify-center items-center">
-        <div className="text-[24px] md:text-[40px] text-center md:leading-[50px] font-[800] nunito-sans pt-[24px] md:pt-[60px]">
+      <div className="absolute top-[78px] md:top-[99px] w-full flex flex-col justify-center items-center">
+        <div className="text-[24px] md:text-[40px] text-center md:leading-[50px] font-[800] nunito-sans pt-[45px] md:pt-[60px]">
           {singleProject ? singleProject.title : "Loading..."}
         </div>
         <img
-          className="max-w-[335px] md:max-w-[800px] min-h-[296px]  md:min-h-[530px]  object-contain  bg-no-repeat pt-[24px] md:pt-12 "
+          className="max-w-[93%] md:max-w-[800px] min-h-[296px]  md:min-h-[530px]  object-contain bg-no-repeat pt-[0px] md:pt-12 "
           loading="lazy"
           src={singleProject ? singleProject.projectUrl.url : "Loading..."}
           alt=""
         />
       </div>
       <div className="bg-[#231F20] w-full flex items-center justify-center ">
-        <div className=" text-white nunito-sans h-full  flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%] ">
+        <div className=" text-white nunito-sans h-full  flex flex-col gap-[16px] mb-[30px] md:mb-[60px] w-[93%] md:w-[78%] ">
           <div>{singleProject ? singleProject.aboutProject : "Loading..."}</div>
           {singleProject
             ? singleProject.description

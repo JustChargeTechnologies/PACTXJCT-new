@@ -43,23 +43,23 @@ const NewsDetail = () => {
               </div>
               <div className="min-w-[76px] border-1 border-white h-0  ml-4"></div>
             </div>
-            <div className="text-center text-[24px] md:text-[50px] py-3 pb-8 font-[800]  text-[#E3F5FF]">
+            <div className="text-center text-[24px] md:text-[40px] leading-[100%] py-3 pb-8 font-[800]  text-[#E3F5FF]">
               {SingleNews.title || "News Title"}
             </div>
             <img src={SingleNews.images[0].imageUrl} loading="lazy" alt="" />
           </div>
         </div>
         <div className="w-full flex items-center justify-center">
-          <div className="nunito-sans h-full flex flex-col gap-[16px] mb-[30px] md:mb-[60px] p-[20px] w-[93%] md:w-[78%]">
+          <div className="nunito-sans h-full flex flex-col gap-[16px] mb-[30px] md:mb-[40px] pt-[24px] w-[93%] md:w-[78%]">
             <div className="leading-[24px] font-[400] tracking-wider flex flex-col gap-[16px]">
               {SingleNews.images[0].paragraph || "No description available."}
             </div>
             {Array.isArray(SingleNews.images) ? (
               SingleNews.images.slice(1).map((item, index) => (
-                <div key={index} className="flex flex-col gap-5 mt-10">
-                  <div className="flex flex-col gap-5 rounded-lg bg-white">
+                <div key={index} className="flex flex-col gap-0 mt-3">
+                  <div className="flex flex-col gap-0 rounded-lg bg-white">
                     <div
-                      className="h-auto bg-cover bg-no-repeat mb-[40px]"
+                      className="h-auto bg-cover bg-no-repeat mb-[30px]"
                       style={{ backgroundImage: `url(${item.imageUrl})` }}
                     >
                       <img
@@ -69,7 +69,7 @@ const NewsDetail = () => {
                         loading="lazy"
                       />
                     </div>
-                    <div className="text-[16px] text-black leading-[24px] font-[400] flex flex-col gap-[16px] tracking-wider">
+                    <div className="text-[16px] text-black leading-[24px] font-[400] flex flex-col gap-[10px] tracking-wider">
                       {item.paragraph.split("\n").map((sentence, i) => (
                         <p key={i}>{sentence.trim() && `${sentence.trim()}.`}</p>
                       ))}

@@ -47,20 +47,20 @@ const News = () => {
               <Link to={`/newsroom/${item._id}`} key={indx} className="image-part flex flex-col md:flex-row gap-5">
                 <div>
                   <img
-                    className="min-w-[284px] md:min-w-[244px] h-[160px] rounded-xl"
+                    className="min-w-[284px] md:min-w-[264px] h-[185px] rounded-xl"
                     loading="lazy"
                     src={item.images[0]?.imageUrl || ""}
                     alt={item.title || "News Image"}
                   />
                 </div>
                 <div className="flex flex-col gap-[5px]">
-                  <div className="font-[800] text-[16px] md:text-[20px] leading-[150%] ">
+                  <div className="font-[800] text-[16px] md:text-[20px] text-[#54595F] leading-[150%] ">
                     {item.title}
                   </div>
-                  <div className="text-[#1D2130] text-[11px] md:text-[14px] font-[600] leading-[150%]">
+                  <div className="text-[11px] md:text-[14px] font-[600] text-[#ADADAD] leading-[150%]">
                     {formatDate(`${item.date}`)}
                   </div>
-                  <div className="text-[14px] md:text-[16px]">
+                  <div className="text-[14px] text-[#7A7A7A] md:text-[16px]">
                   {item.images[0]?.paragraph || ""}
                   </div>
                 </div>
