@@ -102,7 +102,7 @@ const Sponsor = () => {
                 sponsor.map((item, index) => (
                   <div
                     key={index}
-                    className="flex-none ml-2 xl:ml-4 2xl:ml-0"
+                    className="flex-none ml-0 xl:ml-4 2xl:ml-0"
                     style={
                       window.innerWidth >= 1200
                         ? { width: `${95.5 / visibleSlides}%` }
@@ -144,7 +144,7 @@ const Sponsor = () => {
             <>
               <button
                 onClick={scrollLeft}
-                className="absolute left-[34px] md:left-[16px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[32px] w-[32px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
+                className="absolute left-[37px] md:left-[16px] top-1/2 transform -translate-y-1/2 bg-green-500 h-[32px] w-[32px] md:h-[50px] md:w-[50px] flex items-center justify-center rounded-full shadow-lg"
               >
                 <MdKeyboardArrowLeft className="text-white text-2xl" />
               </button>

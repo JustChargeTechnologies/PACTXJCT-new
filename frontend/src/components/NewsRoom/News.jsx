@@ -47,7 +47,7 @@ const News = () => {
               <Link to={`/newsroom/${item._id}`} key={indx} className="image-part flex flex-col md:flex-row gap-5">
                 <div>
                   <img
-                    className="min-w-[284px] md:min-w-[264px] h-[185px] rounded-xl"
+                    className="min-w-full md:min-w-[264px] h-[210px] md:h-[185px] rounded-xl"
                     loading="lazy"
                     src={item.images[0]?.imageUrl || ""}
                     alt={item.title || "News Image"}
