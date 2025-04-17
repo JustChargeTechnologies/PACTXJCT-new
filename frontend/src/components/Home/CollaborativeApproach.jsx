@@ -33,22 +33,24 @@ const CollaborativeApproach = () => {
     slidesToScroll: 1,
     variableWidth: true,
     centerPadding: "0px",
-    appendDots: (dots) => (
-      <div style={{ marginTop: "30px" }}>
-        <ul style={{ margin: "0px" }}>{dots}</ul>
-      </div>
-    ),
-    customPaging: () => (
-      <div
-        style={{
-          width: "3px",
-          height: "3px",
-          borderRadius: "50%",
-          backgroundColor: "gray",
-          marginTop:"12px"
-        }}
-      />
-    ),
+    autoplay: true, // ✅ Enable autoplay
+    autoplaySpeed: 2000,
+    // appendDots: (dots) => (
+    //   <div style={{ marginTop: "30px" }}>
+    //     <ul style={{ margin: "0px" }}>{dots}</ul>
+    //   </div>
+    // ),
+    // customPaging: () => (
+    //   <div
+    //     style={{
+    //       width: "3px",
+    //       height: "3px",
+    //       borderRadius: "50%",
+    //       backgroundColor: "gray",
+    //       marginTop: "12px",
+    //     }}
+    //   />
+    // ),
   };
 
   return (
@@ -67,7 +69,9 @@ const CollaborativeApproach = () => {
               </h2>
               <div className="text-[36px] mt-3 leading-[50px] text-center font-bold">
                 Our approach is modeled around bringing{" "}
-                <span className="text-[#8EC641] italic">change at all levels</span>
+                <span className="text-[#8EC641] italic">
+                  change at all levels
+                </span>
               </div>
               <div className="pt-2">
                 <img
@@ -92,7 +96,10 @@ const CollaborativeApproach = () => {
             <div className="slider-container overflow-hidden p-0 m-0 min-h-[240px] pb-8">
               <Slider {...settings}>
                 {images.map((img, index) => (
-                  <div key={index}  className="max-w-[236px] xl:max-w-[236px] 2xl:max-w-[276px]">
+                  <div
+                    key={index}
+                    className="max-w-[236px] xl:max-w-[236px] 2xl:max-w-[276px]"
+                  >
                     <div className="mr-[30px] 2xl:mr-[50px]">
                       <img
                         src={img.src}
