@@ -66,7 +66,7 @@ const Payments = () => {
                 </td>
                 <td>
                   <Link
-                    to="/supportus/:id"
+                    to={`/supportus/${item._id}`}
                     className="px-4 mt-4 py-2 mr-2 rounded-xl bg-blue-600 text-white dark:bg-gray-800 whitespace-nowrap"
                   >
                     View Details

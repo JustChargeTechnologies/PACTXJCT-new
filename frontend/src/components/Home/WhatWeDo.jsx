@@ -9,7 +9,7 @@ const WhatWeDo = () => {
   return (
     <div className=" h-auto w-full ">
       <div className="  h-auto  bg-[#2282B4] pt-8 md:pt-0 flex items-center justify-center">
-        <div className="w-[93%] xl:w-[88%] 2xl:w-[79%]">
+        <div className="w-[93%] xl:w-[88%] 2xl:w-[80%]">
         <div className="pt-[25px] md:pt-[40px] ">
           <h3 className="text-[#E3F5FF] flex items-center font-normal text-[12px]  md:text-[14px] pb-3">
             <div>WHAT WE DO</div>
@@ -30,7 +30,7 @@ const WhatWeDo = () => {
             <img
               src={WhatWeDoImg}
               alt="vision"
-              className=" w-[333.8px]  h-[403.47px] md:w-3xl md:h-[613px]   "
+              className=" w-[333.8px]  h-[403.47px] md:w-[580px] 2xl:w-3xl md:h-[585px] 2xl:h-[613px] "
               loading="lazy"
             />
           </div>

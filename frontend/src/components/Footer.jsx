@@ -15,11 +15,11 @@ const Footer = () => {
             <h3 className="nunito-sans font-bold text-[20px] md:mt-[-16px] leading-[30px]">
               Get connected
             </h3>
-            <p className="nunito-sans font-medium text-[14px] leading-[26px] mt-4">
+            <div className="nunito-sans font-medium text-[14px] leading-[26px] mt-4">
               <p>Join the conversation on social, and stay</p>
               <p>connected with our latest events and partners</p>
               <p>around the world.</p>
-            </p>
+            </div>
             <div className=" flex gap-4 mt-4">
               <a href="https://www.facebook.com/pactforyou" target="blank" className="h-[31.28px] w-[30.34px] flex justify-center items-center rounded-md bg-white">
                 <img src={Facebook} className="rounded-full h-[22px] w-[22px]" loading="lazy" alt="" />

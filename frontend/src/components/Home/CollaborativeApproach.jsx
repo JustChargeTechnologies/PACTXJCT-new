@@ -33,7 +33,7 @@ const CollaborativeApproach = () => {
     slidesToScroll: 1,
     variableWidth: true,
     centerPadding: "0px",
-    autoplay: true, // ✅ Enable autoplay
+    autoplay: true,
     autoplaySpeed: 2000,
     // appendDots: (dots) => (
     //   <div style={{ marginTop: "30px" }}>

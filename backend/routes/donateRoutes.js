@@ -7,4 +7,6 @@ router.post('/verify_payment', donationController.verifyPayment);
 
 router.get('/getDonation',donationController.getAllDonations);
 
+router.get('/getdonation/:id',donationController.getOneDonations);
+
 module.exports=router;

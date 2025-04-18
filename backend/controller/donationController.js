@@ -80,3 +80,14 @@ exports.getAllDonations = async (req, res) => {
       res.status(500).json({ success: false, message: 'Failed to fetch donation details'});
     }
   };
+
+exports.getOneDonations=async (req,res) => {
+  try {
+    const {id}=req.params;
+    const donations = await Donation.findById(id);
+    res.status(200).json({ success: true, donations });
+  } catch (error) {
+    console.error('Error fetching donation details:', error);
+    res.status(500).json({ success: false, message: 'Failed to fetch donation details'});
+  }
+}
