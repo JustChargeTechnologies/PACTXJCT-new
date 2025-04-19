@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from "axios";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import Label from "../form/Label";
-import Input from "../form/input/InputField";
-import TextArea from "../form/input/TextArea";
+import Label from "../components/form/Label";
+import Input from "../components/form/input/InputField";
+import TextArea from "../components/form/input/TextArea";
 import { Link, useNavigate, useParams } from "react-router";
-import { ProjectContext } from "../../context/ProjectsProvider";
+import { ProjectContext } from "../context/ProjectsProvider";
 
-const EditProjects = () => {
+const EditSponsor = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [projectImg, setProjectImg] = useState<string | File>("");
@@ -175,4 +175,4 @@ const EditProjects = () => {
   );
 };
 
-export default EditProjects;
+export default EditSponsor;

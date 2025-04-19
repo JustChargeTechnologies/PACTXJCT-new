@@ -1,6 +1,7 @@
 const Razorpay = require("razorpay");
 const crypto = require("crypto");
 const Donation = require("../models/DonateModel.js");
+const DonateModel = require("../models/DonateModel.js");
 
 // Initialize Razorpay instance with your credentials
 const razorpay = new Razorpay({
@@ -89,5 +90,16 @@ exports.getOneDonations=async (req,res) => {
   } catch (error) {
     console.error('Error fetching donation details:', error);
     res.status(500).json({ success: false, message: 'Failed to fetch donation details'});
+  }
+}
+
+exports.deleteDonations=async (req,res) => {
+  try {
+    const {id}=req.params;
+    await DonateModel.deleteOne({ _id: id });
+    res.status(200).json({message : "Donation deleted succesfully"});
+  } catch (error) {
+    console.error("Error in DeleteHelp:", error);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 }

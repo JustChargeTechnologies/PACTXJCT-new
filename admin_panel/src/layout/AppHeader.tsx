@@ -5,6 +5,7 @@ import { Link } from "react-router";
 import { useSidebar } from "../context/SidebarContext";
 import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
 import { AuthContext } from "../context/AuthContext";
+import logo from "../../public/images/logo/logo.png"
 
 const AppHeader: React.FC = () => {
   const [isApplicationMenuOpen] = useState(false);
@@ -90,12 +91,12 @@ const AppHeader: React.FC = () => {
           <Link to="/" className="lg:hidden">
             <img
               className="dark:hidden h-15"
-              src="./images/logo/logo.png"
+              src={logo}
               alt="Logo"
             />
             <img
               className="hidden dark:block h-15"
-              src="./images/logo/logo.png"
+              src={logo}
               alt="Logo"
             />
           </Link>

@@ -105,8 +105,8 @@ const SponsorAbout = ({ description, images = [] , title ,country }) => {
         className="flex justify-center items-center h-auto relative bg-cover bg-center bg-no-repeat w-full"
       >
         <div className="bg-white/50 flex justify-center items-center w-full">
-          <div className="w-[93%] md:w-[79%] flex justify-center flex-col">
-            <div className="md:w-[60%] mx-auto">
+          <div className="w-[93%] md:w-[79%] flex justify-center flex-col ">
+            <div className="w-[93%] md:w-[60%] mx-auto ">
               {images.length === 0 ? (
                 ""
               ) : (

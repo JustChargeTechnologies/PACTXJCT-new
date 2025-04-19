@@ -15,6 +15,8 @@ import ProtectWrapper from "./context/ProtectWrapper";
 import Help from "./pages/Help";
 import AllProjects from "./components/projects/AllProjects";
 import EditProjects from "./components/projects/EditProjects";
+import AllSponsor from "./pages/AllSponsor";
+import EditSponsor from "./pages/EditSponsor";
 
 export default function App() {
   return (
@@ -107,6 +109,22 @@ export default function App() {
             element={
               <ProtectWrapper>
                 <EditProjects />
+              </ProtectWrapper>
+            }
+          />
+          <Route
+            path="/allsponsor"
+            element={
+              <ProtectWrapper>
+                <AllSponsor/>
+              </ProtectWrapper>
+            }
+          />
+          <Route
+            path="/allsponsor/edit/:id"
+            element={
+              <ProtectWrapper>
+                <EditSponsor/>
               </ProtectWrapper>
             }
           />

@@ -9,4 +9,6 @@ router.get('/getDonation',donationController.getAllDonations);
 
 router.get('/getdonation/:id',donationController.getOneDonations);
 
+router.delete('/deletedonation/:id',donationController.deleteDonations);
+
 module.exports=router;

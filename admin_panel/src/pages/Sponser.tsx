@@ -5,6 +5,7 @@ import Input from "../components/form/input/InputField";
 import TextArea from "../components/form/input/TextArea";
 import FileInput from "../components/form/input/FileInput";
 import axios from "axios";
+import { Link } from "react-router";
 
 export default function Sponser() {
   const [title, setTitle] = useState("");
@@ -54,7 +55,7 @@ export default function Sponser() {
       formData.append("sponserImg", sponserImg);
 
       extraImage.forEach((image) => {
-        formData.append("extraImage", image); // Append each extra image
+        formData.append("extraImage", image); 
       });
 
       const response = await axios.post(
@@ -175,6 +176,14 @@ export default function Sponser() {
               >
                 ADD
               </button>
+            </div>
+            <div>
+              <Link
+                to="/allsponsor"
+                className="w-full px-8 bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700"
+              >
+                SHOW ALL SPONSORS
+              </Link>
             </div>
           </div>
         </div>
